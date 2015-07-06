@@ -1,0 +1,10 @@
+$cl-red: #9A0505;
+$cl-white: #fff;
+
+.home .flash_msgs p {
+	color: $cl-white;
+}
+
+.flash_msgs p {
+	color: $cl-red;	
+}

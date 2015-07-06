@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ConcannonApp</title>
+  <title>Concannon</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<div id="main">
+
+	<div id="header-top">
+		<%= render :partial => "layouts/header" %>
+	</div>
+	<div class="container">
+		<%= yield %>
+	</div>
+</div>
 
 </body>
 </html>

@@ -1,0 +1,86 @@
+$cl-main: #333333;
+$cl-red: #9A0505;
+$border-gray: #dddddd;
+
+/**************************
+RESETS
+**************************/
+/* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/**************************
+LAYOUT
+**************************/
+.h-section {
+  width: 100%;
+  float: left;
+}
+.h-box {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.one-half {
+  display: inline-block;
+  width: 50%;
+  float: left;
+}
+.container {
+  float: left;
+}
+
+/**************************
+TYPOGRAPHY
+**************************/
+body {
+  color: $cl-main;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: normal;
+}
+
+
+a {
+  color: $cl-red;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/**************************
+FORMS
+**************************/
+*:focus {
+  outline: 0;
+}
+input[type=text],
+input[type=email],
+input[type=password]{
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid $border-gray;
+}
+button, input[type=submit] {
+  border-radius: 5px;
+  border: 0;
+  padding: 10px 20px;
+  background: $cl-red;
+  color: #ffffff;
+  transition: opacity 500ms;
+  &:hover {
+    opacity: 0.8;
+  }
+}
