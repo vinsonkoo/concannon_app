@@ -1,6 +1,6 @@
-$cl-main: #333333;
-$cl-red: #9A0505;
-$border-gray: #dddddd;
+$cl-teal: #33c9c9;
+$cl-navy: #051f43;
+$cl-gray: #e0e0e0;
 
 /**************************
 RESETS
@@ -27,37 +27,49 @@ LAYOUT
   max-width: 1200px;
   margin: 0 auto;
 }
-.one-half {
-  display: inline-block;
-  width: 50%;
-  float: left;
-}
-.container {
-  float: left;
-}
 
 /**************************
 TYPOGRAPHY
 **************************/
 body {
-  color: $cl-main;
   font-size: 14px;
   line-height: 1.6;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+  overflow-x: hidden;
+  background: $cl-gray !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif !important;
   font-weight: normal;
 }
 
 
 a {
-  color: $cl-red;
+  color: $cl-teal;
   text-decoration: none;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+}
+a.btn {
+  border-radius: 5px;
+  border: 0;
+  padding: 10px 20px;
+  background: $cl-navy;
+  color: #fff !important;
+  transition: opacity 500ms;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none !important;
+  color: $cl-teal !important;
+  opacity: 0.6;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
 }
 
 /**************************
@@ -71,16 +83,67 @@ input[type=email],
 input[type=password]{
   padding: 8px 10px;
   border-radius: 5px;
-  border: 1px solid $border-gray;
+  border: 1px solid #dddddd;
 }
 button, input[type=submit] {
   border-radius: 5px;
   border: 0;
   padding: 10px 20px;
-  background: $cl-red;
-  color: #ffffff;
+  background: $cl-navy;
+  color: #fff !important;
   transition: opacity 500ms;
   &:hover {
     opacity: 0.8;
   }
+}
+
+
+/* background setup */
+.background {
+  background-repeat:no-repeat;
+  /* custom background-position */
+  background-position:50% 55%;
+  /* ie8- graceful degradation */
+  background-position:50% 55%\9 !important;
+}
+
+/* fullscreen setup */
+html, body {
+  /* give this to all tags from html to .fullscreen */
+  height: 100%;
+}
+.fullscreen,
+.content-a {
+  width: 100%;
+  min-height: 100%;
+}
+.not-fullscreen,
+.not-fullscreen .content-a,
+.fullscreen.not-overflow,
+.fullscreen.not-overflow .content-a {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* content centering styles */
+.content-a {
+  display: table;
+}
+.content-b {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+}
+
+/* visual styles */
+body{
+  margin: 0;
+  font-size: 28px;
+  line-height: 100px;
+}
+section {
+  background: #9ed100;
+}
+.not-fullscreen {
+  height: 50%;
 }

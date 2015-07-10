@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'bootstrap-sass', '~> 3.3.5'
+gem 'autoprefixer-rails'
+
 group :development do 
 	gem 'better_errors'
 	gem 'binding_of_caller'
@@ -13,8 +16,8 @@ end
 gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+# Use SCSS for stylesheets NOT USED BECAUSE OF BOOTSTRAP-SASS AND AUTOPREFIXER-RAILS
+# gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views

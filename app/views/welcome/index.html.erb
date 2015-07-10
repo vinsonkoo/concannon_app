@@ -1,2 +1,150 @@
-<h1>Welcome#index</h1>
-<p> <%= @message %></p>
+<div class="home-bg-1 fullscreen background parallax">
+	<div class="container">
+		<div class="content-a">
+			<div class="content-b">
+				<div class="col-xs-6">
+					<h1 class="teal">BE SECURE AS YOU TAKE ON THE WORLD</h1>
+					<a class="btn">SPEAK WITH US</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<h3 class="navy desc">For over 100 years, Concannon Insurance and Risk Management has protected numerous companies and municipalities, serving as a valuable partner.</h3>
+</div>
+
+<div class="container teal-border">
+	<div class="col-sm-6 risk-management">
+			<h4 class="text-center"><strong>RISK MANAGEMENT</strong></h4>
+			<p>Understand how your company can save millions of dollars each year in work-related insurance deductables.</p>
+			<p class="text-center"><strong>Improve your work place. Save money.</strong></p>
+			<p class="text-center"><a class="teal-btn" href="#">learn more</a></p>
+	</div>
+	<div class="col-sm-6 insurance-coverage">
+			<h4 class="text-center"><strong>INSURANCE COVERAGE</strong></h4>
+			<p>Find the best insurance coverage for your company's employees and assets with our team of policy brokers.</p>
+			<p class="text-center"><strong>Protect your future. Conqure the World.</strong></p>
+			<p class="text-center"><a class="teal-btn" href="#">learn more</a></p>
+	</div>
+</div>
+
+<div class="home-bg-2 fullscreen background parallax">
+	<div class="container">
+		<div class="content-a">
+			<div class="content-b">
+				<div class="col-md-10 col-md-offset-1 testimonials">
+					<h3 class="teal text-center">What Concannon Clients Say</h3>
+					<p class="text-center"><img class="testimonial-quote-img" src="../../images/quotation-marks.png" /></p>
+					<p class="white">Jim Concannon, preceded by his father and grandfather, has been serving the Carpenters District Council and Fringe Benefit Funds for over 40 years.</p>
+					<p class="white">The Concannon Insurance Agency makes it a point to understand our business so that they can accurately evaluate our insurance needs and effectively communicate those needs to our administrative team.</p>
+					<p class="text-right white">-Jull Laramie, CFO, Carpenters District Council of Greater St. Louis &amp; Vicinity</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+/* detect touch */
+if("ontouchstart" in window){
+    document.documentElement.className = document.documentElement.className + " touch";
+}
+if(!$("html").hasClass("touch")){
+    /* background fix */
+    $(".parallax").css("background-attachment", "fixed");
+}
+
+/* fix vertical when not overflow
+call fullscreenFix() if .fullscreen content changes */
+function fullscreenFix(){
+    var h = $('body').height();
+    // set .fullscreen height
+    $(".content-b").each(function(i){
+        if($(this).innerHeight() <= h){
+            $(this).closest(".fullscreen").addClass("not-overflow");
+        }
+    });
+}
+$(window).resize(fullscreenFix);
+fullscreenFix();
+
+/* resize background images */
+function backgroundResize(){
+    var windowH = $(window).height();
+    $(".background").each(function(i){
+        var path = $(this);
+        // variables
+        var contW = path.width();
+        var contH = path.height();
+        var imgW = path.attr("data-img-width");
+        var imgH = path.attr("data-img-height");
+        var ratio = imgW / imgH;
+        // overflowing difference
+        var diff = parseFloat(path.attr("data-diff"));
+        diff = diff ? diff : 0;
+        // remaining height to have fullscreen image only on parallax
+        var remainingH = 0;
+        if(path.hasClass("parallax") && !$("html").hasClass("touch")){
+            var maxH = contH > windowH ? contH : windowH;
+            remainingH = windowH - contH;
+        }
+        // set img values depending on cont
+        imgH = contH + remainingH + diff;
+        imgW = imgH * ratio;
+        // fix when too large
+        if(contW > imgW){
+            imgW = contW;
+            imgH = imgW / ratio;
+        }
+        //
+        path.data("resized-imgW", imgW);
+        path.data("resized-imgH", imgH);
+        path.css("background-size", imgW + "px " + imgH + "px");
+    });
+}
+$(window).resize(backgroundResize);
+$(window).focus(backgroundResize);
+backgroundResize();
+
+/* set parallax background-position */
+function parallaxPosition(e){
+    var heightWindow = $(window).height();
+    var topWindow = $(window).scrollTop();
+    var bottomWindow = topWindow + heightWindow;
+    var currentWindow = (topWindow + bottomWindow) / 2;
+    $(".parallax").each(function(i){
+        var path = $(this);
+        var height = path.height();
+        var top = path.offset().top;
+        var bottom = top + height;
+        // only when in range
+        if(bottomWindow > top && topWindow < bottom){
+            var imgW = path.data("resized-imgW");
+            var imgH = path.data("resized-imgH");
+            // min when image touch top of window
+            var min = 0;
+            // max when image touch bottom of window
+            var max = - imgH + heightWindow;
+            // overflow changes parallax
+            var overflowH = height < heightWindow ? imgH - height : imgH - heightWindow; // fix height on overflow
+            top = top - overflowH;
+            bottom = bottom + overflowH;
+            // value with linear interpolation
+            var value = min + (max - min) * (currentWindow - top) / (bottom - top);
+            // set background-position
+            var orizontalPosition = path.attr("data-oriz-pos");
+            orizontalPosition = orizontalPosition ? orizontalPosition : "50%";
+            $(this).css("background-position", orizontalPosition + " " + value + "px");
+        }
+    });
+}
+if(!$("html").hasClass("touch")){
+    $(window).resize(parallaxPosition);
+    //$(window).focus(parallaxPosition);
+    $(window).scroll(parallaxPosition);
+    parallaxPosition();
+}
+
+</script>
