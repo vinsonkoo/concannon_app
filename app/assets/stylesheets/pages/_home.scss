@@ -6,7 +6,7 @@ $cl-gray: #e0e0e0;
 COLORS
 **************************/
 .navy {
-  color: $cl-navy;
+	color: $cl-navy;
 }
 .teal {
   color: $cl-teal;
@@ -51,6 +51,7 @@ h3.desc {
 
 	p {
 		margin-top: 30px;
+		font-size: 18px;
 	}
 }
 
@@ -90,17 +91,4 @@ h3.desc {
 .home-bg-2 {
 	background-image:url('../../images/business-meeting.jpg');
 	/*background-position-y: -100px !important;*/
-}
-
-.testimonials h1 {
-	font-size: 60px;
-}
-
-.testimonials p {
-	font-size: 18px;
-	line-height: 2em;
-}
-
-.testimonial-quote-img {
-	width: 36px;
 }
