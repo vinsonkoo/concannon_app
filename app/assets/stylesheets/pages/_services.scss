@@ -1,0 +1,36 @@
+$cl-teal: #33c9c9;
+$cl-navy: #051f43;
+$cl-gray: #e0e0e0;
+
+
+
+/*.services h2 span {
+	border-bottom: 2px solid $cl-teal;
+	padding-bottom: 10px;
+}*/
+
+.services h2 {
+	margin-bottom: 20px;
+}
+
+.services h2:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	border-bottom: 2px solid $cl-teal;
+	width: 40%;
+	left: 30%;
+}
+
+@media screen and (max-width: 768px) {
+	.services h2:before {
+		bottom: -10px;
+		width: 20%;
+		left: 40%;
+	}
+}
+
+.services p {
+	font-size: 20px;
+}

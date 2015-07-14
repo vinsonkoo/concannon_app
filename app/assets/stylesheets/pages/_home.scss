@@ -2,21 +2,6 @@ $cl-teal: #33c9c9;
 $cl-navy: #051f43;
 $cl-gray: #e0e0e0;
 
-/**************************
-COLORS
-**************************/
-.navy {
-	color: $cl-navy;
-}
-.teal {
-  color: $cl-teal;
-}
-.gray {
-  color: $cl-gray;
-}
-.white {
-	color: #fff;
-}
 
 .home-bg-1 {
 	background-image:url('../../images/thoughtful-professional.jpg');
@@ -80,13 +65,6 @@ h3.desc {
 	}
 }
 
-
-.teal-btn {
-	background: $cl-teal;
-	border-radius: 5px;
-	color: #fff;
-	padding: 8px 12px;
-}
 
 .home-bg-2 {
 	background-image:url('../../images/business-meeting.jpg');

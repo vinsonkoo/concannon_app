@@ -71,6 +71,29 @@ a:hover {
   -moz-transition: opacity .5s ease-in-out;
   -webkit-transition: opacity .5s ease-in-out;
 }
+a.teal-btn {
+  background: $cl-teal;
+  border-radius: 5px;
+  color: #fff;
+  padding: 8px 12px;
+  transition: color .5s ease-in-out !important;
+  -moz-transition: color .5s ease-in-out !important;
+  -webkit-transition: color .5s ease-in-out !important;
+  opacity: 0.9;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+}
+a.teal-btn:hover {
+  color: $cl-navy !important;
+  transition: color .5s ease-in-out !important;
+  -moz-transition: color .5s ease-in-out !important;
+  -webkit-transition: color .5s ease-in-out !important;
+  opacity: 0.9;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+}
 
 /**************************
 FORMS
@@ -95,6 +118,29 @@ button, input[type=submit] {
   &:hover {
     opacity: 0.8;
   }
+}
+
+
+/**************************
+COLORS
+**************************/
+.navy {
+  color: $cl-navy;
+}
+.navy-bg {
+  background: $cl-navy;
+}
+.teal {
+  color: $cl-teal;
+}
+.gray {
+  color: $cl-gray;
+}
+.white {
+  color: #fff;
+}
+.navy-bg {
+  background: $cl-navy;
 }
 
 
