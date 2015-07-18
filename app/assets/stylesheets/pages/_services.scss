@@ -4,10 +4,9 @@ $cl-gray: #e0e0e0;
 
 
 
-/*.services h2 span {
-	border-bottom: 2px solid $cl-teal;
-	padding-bottom: 10px;
-}*/
+.services .navy-bg {
+	margin-bottom: 30px;
+}
 
 .services h2 {
 	margin-bottom: 20px;
@@ -33,4 +32,44 @@ $cl-gray: #e0e0e0;
 
 .services p {
 	font-size: 20px;
+}
+
+.services {
+
+	.navy-border {
+		border: 10px solid $cl-navy;
+		background: #fff;
+		margin-bottom: 30px;
+
+		span.navy {
+			margin-right: 20px;
+		}
+		span.gray {
+			margin-left: 20px;
+		}
+	}
+
+	p {
+		margin-top: 30px;
+		font-size: 18px;
+	}
+}
+
+.service-bg-image {
+
+	ul li {
+		list-style-type: none;
+	}
+
+	ul li:before {
+		content: "- ";
+	}
+
+	.future, .business {
+		padding: 35px;
+	}
+
+	.future h3, .business h3 {
+		margin-bottom: 40px;
+	}
 }

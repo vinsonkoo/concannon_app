@@ -1,6 +1,11 @@
 $cl-teal: #33c9c9;
 $cl-navy: #051f43;
-$cl-gray: #e0e0e0;
+$cl-gray: #a9a9a9;
+
+@font-face {
+  font-family: "gotham-medium";
+  src: url(/assets/fonts/gothammedium.otf);
+}
 
 /**************************
 RESETS
