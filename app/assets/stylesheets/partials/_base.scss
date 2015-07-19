@@ -3,8 +3,17 @@ $cl-navy: #051f43;
 $cl-gray: #a9a9a9;
 
 @font-face {
-  font-family: "gotham-medium";
-  src: url(/assets/fonts/gothammedium.otf);
+  font-family: 'gothammedium';
+  src:font-url('gothammedium.otf') format('opentype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrat-bold';
+  src:font-url('montserrat-bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MONTSERRAT-REGULAR';
+  src:font-url('/montserrat-regular.ttf') format('truetype');
 }
 
 /**************************
@@ -45,7 +54,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'gothammedium' !important;
   font-weight: normal;
 }
 
