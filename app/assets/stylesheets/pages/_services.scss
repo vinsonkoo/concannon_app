@@ -24,14 +24,20 @@ $cl-gray: #e0e0e0;
 
 @media screen and (max-width: 768px) {
 	.services h2:before {
-		bottom: -10px;
-		width: 20%;
-		left: 40%;
+		bottom: -10px !important;
+		width: 20% !important;
+		left: 40% !important;
 	}
 }
 
 .services p {
 	font-size: 20px;
+}
+
+@media (max-width: 992px) {
+	.service-bg-image > h3 span {
+		display: block;
+	}
 }
 
 .services {
@@ -178,7 +184,7 @@ $cl-gray: #e0e0e0;
 	.service-bg-image {
 
 		> h3 {
-			height: 100px;
+			height: inherit;
 			
 			span {
 				display: block;
@@ -191,10 +197,12 @@ $cl-gray: #e0e0e0;
 		
 		.future, .business {
 			padding-left: 60px;
+			padding-right: 35px;
 		}
 
 		p a.btn {
 			width: 90%;
+			white-space: inherit;
 		}
 	}
 
