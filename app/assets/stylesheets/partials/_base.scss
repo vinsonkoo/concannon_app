@@ -72,24 +72,30 @@ a.btn {
   padding: 10px 20px;
   background: $cl-navy;
   color: #fff !important;
+  font-size: 18px;
   transition: opacity 500ms;
   &:hover {
-    opacity: 0.8;
+    opacity: 1;
   }
+
 }
 a:hover {
   text-decoration: none !important;
   color: $cl-teal !important;
   opacity: 0.6;
+  transition: color .5s ease-in-out !important;
+  -moz-transition: color .5s ease-in-out !important;
+  -webkit-transition: color .5s ease-in-out !important;
   transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
   -webkit-transition: opacity .5s ease-in-out;
 }
 a.teal-btn {
+  display: inline-block;
   background: $cl-teal;
   border-radius: 5px;
   color: #fff;
-  padding: 8px 12px;
+  padding: 10px 20px;
   transition: color .5s ease-in-out !important;
   -moz-transition: color .5s ease-in-out !important;
   -webkit-transition: color .5s ease-in-out !important;
