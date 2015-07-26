@@ -24,4 +24,3 @@ module ConcannonApp
     config.active_record.raise_in_transactional_callbacks = true
   end
 end
-config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
