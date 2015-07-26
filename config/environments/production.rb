@@ -78,8 +78,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.assets.precompile << Proc.new { |path|
-  if path =~ /\.(eot|svg|ttf|woff)\z/
-    true
-  end
-}
+    if path =~ /\.(eot|svg|ttf|woff)\z/
+      true
+    end
+  }
 end
