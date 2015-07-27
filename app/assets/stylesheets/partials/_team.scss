@@ -1,0 +1,63 @@
+$cl-teal: #33c9c9;
+$cl-navy: #051f43;
+$cl-gray: #e0e0e0;
+
+
+
+.team .navy-bg {
+	margin-bottom: 30px;
+}
+
+.team h2 {
+	margin-bottom: 20px;
+}
+
+.team h2.title:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	border-bottom: 2px solid $cl-teal;
+	width: 40%;
+	left: 30%;
+}
+
+.team {
+
+	.navy-border {
+		border: 10px solid $cl-navy;
+		background: #fff;
+		margin-bottom: 30px;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 30px;
+
+		span.navy {
+			margin-right: 20px;
+		}
+		span.gray {
+			margin-left: 20px;
+		}
+	}
+
+	p {
+		margin-top: 30px;
+		font-size: 20px;
+	}
+
+	.home-bg-2 {
+		background-image: none;
+
+		h2 {
+			color: $cl-navy;
+		}
+
+		.carousel-indicators li {
+			background: $cl-teal;
+		}
+
+		.carousel-indicators .active {
+			background: #fff;
+		}
+	}
+}
