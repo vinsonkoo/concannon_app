@@ -1,7 +1,7 @@
 $cl-teal: #33c9c9;
 $cl-navy: #051f43;
 $cl-gray: #e0e0e0;
-
+$cl-yellow: #efe16a;
 
 
 .services .navy-bg {
@@ -20,20 +20,6 @@ $cl-gray: #e0e0e0;
 	border-bottom: 2px solid $cl-teal;
 	width: 40%;
 	left: 30%;
-}
-
-@media screen and (max-width: 768px) {
-	.services h2:before {
-		bottom: -10px !important;
-		width: 20% !important;
-		left: 40% !important;
-	}
-}
-
-@media (max-width: 992px) {
-	.service-bg-image > h3 span {
-		display: block;
-	}
 }
 
 .services {
@@ -80,15 +66,23 @@ $cl-gray: #e0e0e0;
 	background-image:url('../../images/man-phone.png') !important;
 	background-size: cover !important;
 	background-repeat: no-repeat;
-	-webkit-box-shadow:inset 0px 15px 0px 35px #fff;
-  -moz-box-shadow:inset 0px 15px 0px 35px #fff;
-  box-shadow:inset 0px 15px 0px 35px #fff;
+	-webkit-box-shadow:inset 0px 0px 0px 30px #fff;
+  -moz-box-shadow:inset 0px 0px 0px 30px #fff;
+  box-shadow:inset 0px 0px 0px 30px #fff;
+
+  .myrow {
+  	padding: 0 45px;
+  }
 
 	> h3 {
 		background: #fff;
 		margin-top: 0;
-		height: 50px;
 		line-height: 50px;
+		margin-bottom: 70px;
+	}
+
+	span.yellow {
+		color: $cl-yellow;
 	}
 
 	ul li {
@@ -99,22 +93,13 @@ $cl-gray: #e0e0e0;
 		content: "- ";
 	}
 
-	.future {
-		padding-left: 60px;
-	}
-	.business {
-		padding-left: 20px;
-	}
-
-	.future h3, .business h3 {
+	.business-insurance h3,
+	.services-risk-management h3,
+	.personal-insurance h3 {
 		margin-bottom: 40px;
 	}
 
-	p.white {
-		padding-right: 35px;
-	}
-
-	p a.btn {
+	a.btn {
 		font-size: 18px;
 		background: transparent;
 		border-radius: 0px;
@@ -123,7 +108,7 @@ $cl-gray: #e0e0e0;
 	  -moz-transition: color .5s ease-in-out !important;
 	  -webkit-transition: color .5s ease-in-out !important;
 	}
-	p a.btn:hover {
+	a.btn:hover {
 	  color: $cl-teal !important;
 	  transition: color .5s ease-in-out !important;
 	  -moz-transition: color .5s ease-in-out !important;
@@ -144,21 +129,29 @@ $cl-gray: #e0e0e0;
 	}
 }
 
+@media screen and (max-width: 768px) {
+	.services h2:before {
+		bottom: -10px !important;
+		width: 20% !important;
+		left: 40% !important;
+	}
+}
+
+@media (max-width: 992px) {
+	.service-bg-image > h3 span {
+		display: block;
+	}
+}
+
+
+
 @media screen and (min-width: 768px) {
 	.service-bg-image {
 
-		.side-border {
-			border-right: 1px solid #fff;
-		}
-
-		p a.btn {
-		  width: 90%;
-  		white-space: inherit;
-		}
 	}
 	.services {
 		.navy-border {
-			padding-bottom: 100px;
+			padding-bottom: 300px;
 		}
 	}
 	.services-cta {
@@ -174,10 +167,19 @@ $cl-gray: #e0e0e0;
 		h3 {
 			margin-top: 40px;
 		}
+		a.btn {
+			line-height: 56px;
+		}
 	}
 }
+
 @media screen and (max-width: 768px) {
 	.service-bg-image {
+		background-position: -450px 105px !important;
+
+		a.btn {
+  		width: 100%;
+		}
 
 		> h3 {
 			height: inherit;
@@ -190,16 +192,6 @@ $cl-gray: #e0e0e0;
 				margin: 0;
 			}
 		}
-		
-		.future, .business {
-			padding-left: 60px;
-			padding-right: 35px;
-		}
-
-		p a.btn {
-			width: 90%;
-			white-space: inherit;
-		}
 	}
 
 	.services-cta {
@@ -207,5 +199,56 @@ $cl-gray: #e0e0e0;
 			margin: 0;
 			display: block;
 		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.service-bg-image {
+		
+		.business-insurance p.narrow-p,
+		.services-risk-management p.narrow-p,
+		.personal-insurance p.narrow-p {
+			font-style: italic;
+		}
+
+		.align-btn {
+			position:	absolute;
+			top: 200px;
+			text-align: center;
+			white-space: inherit;
+			width: 100%;
+			left: 0;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	.service-bg-image {
+
+
+		.business-insurance {
+		}
+		.business-insurance h3,
+		.services-risk-management h3,
+		.personal-insurance h3 {
+		}
+	}	
+}
+@media screen and (min-width: 1200px) {
+	.service-bg-image {
+
+		.business-insurance p.narrow-p,
+		.services-risk-management p.narrow-p,
+		.personal-insurance p.narrow-p {
+			font-style: italic;
+			padding: 0 12.5%;
+		}
+
+		.business-insurance h3,
+		.services-risk-management h3, 
+		.personal-insurance h3 {
+			padding-left: 0;
+		}
+
 	}
 }

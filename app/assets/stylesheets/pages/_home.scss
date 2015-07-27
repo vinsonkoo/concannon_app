@@ -40,19 +40,19 @@ h3.desc {
 	}
 }
 
-.risk-management, .insurance-coverage {
+.home-risk-management, .insurance-coverage {
 	margin: 40px 0;
 	text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-	.risk-management, .insurance-coverage {
+@media screen and (min-width: 992px) {
+	.home-risk-management, .insurance-coverage {
 		padding: 0px 40px !important;
 		border-top: 20px solid #fff;
 		border-bottom: 20px solid #fff;
 		margin: 25px 0;
 	}
-	.risk-management {
+	.home-risk-management {
 		-webkit-box-shadow:inset -3px 0px 0px 0px #000;
 	  -moz-box-shadow:inset -3px 0px 0px 0px #000;
 	  box-shadow:inset -3px 0px 0px 0px #000;
