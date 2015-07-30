@@ -6,8 +6,18 @@ $cl-light-blue: #4fb4e5;
 
 
 
-.about h1 {
+.about h2 {
 	margin-bottom: 20px;
+}
+
+.about h2.title:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	border-bottom: 2px solid $cl-teal;
+	width: 40%;
+	left: 30%;
 }
 
 .about {
@@ -22,7 +32,16 @@ $cl-light-blue: #4fb4e5;
 	}
 
 	.teal-border {
+		border: 10px solid $cl-teal;
+		background: #fff;
+		padding-bottom: 30px;
+		margin: 30px 15px;
 
+		span.underline {
+			border-bottom: 4px solid $cl-yellow;
+			padding-bottom: 8px;
+			line-height: 50px;
+		}
 
 		p {
 			margin-top: 20px;

@@ -1,0 +1,34 @@
+$cl-teal: #33c9c9;
+$cl-navy: #051f43;
+$cl-gray: #a9a9a9;
+$cl-yellow: #efe16a;
+$cl-light-blue: #4fb4e5;
+
+
+
+.insurance {
+
+	p {
+		font-size: 20px;
+	}
+
+	.navy-bg {
+		padding: 50px 0;
+	}
+
+	
+
+	.teal-border {
+		ul li {
+			list-style-type: none;
+			font-size: 20px;
+		}
+
+		ul li:before {
+			content: "- ";
+		}
+		a {
+			text-decoration: underline;
+		}
+	}
+}

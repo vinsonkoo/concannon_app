@@ -4,10 +4,19 @@ $cl-gray: #e0e0e0;
 
 
 
-.team h1 {
+.team h2 {
 	margin-bottom: 20px;
 }
 
+.team h2.title:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	border-bottom: 2px solid $cl-teal;
+	width: 40%;
+	left: 30%;
+}
 
 .team {
 
@@ -16,6 +25,12 @@ $cl-gray: #e0e0e0;
 	}
 
 	.navy-border {
+		border: 10px solid $cl-navy;
+		background: #fff;
+		margin-bottom: 30px;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 30px;
 
 		span.navy {
 			margin-right: 20px;
