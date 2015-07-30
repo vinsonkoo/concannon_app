@@ -1,0 +1,84 @@
+$cl-teal: #33c9c9;
+$cl-navy: #051f43;
+$cl-gray: #e0e0e0;
+$cl-yellow: #efe16a;
+$cl-light-blue: #4fb4e5;
+
+
+
+.about h2 {
+	margin-bottom: 20px;
+}
+
+.about h2.title:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	border-bottom: 2px solid $cl-teal;
+	width: 40%;
+	left: 30%;
+}
+
+.about {
+
+	.navy-bg {
+		padding: 50px 0;
+	}
+
+	.navy-bg p {
+		margin-top: 30px;
+		font-size: 20px;
+	}
+
+	.teal-border {
+		border: 10px solid $cl-teal;
+		background: #fff;
+		padding-bottom: 30px;
+		margin: 30px 15px;
+
+		span.underline {
+			border-bottom: 4px solid $cl-yellow;
+			padding-bottom: 8px;
+			line-height: 50px;
+		}
+
+		p {
+			margin-top: 20px;
+			font-size: 18px;
+		}
+
+		a {
+			text-decoration: underline;
+		}
+	}
+	.home-bg-2 {
+		background-image: none;
+	}
+}
+
+.about-cta {
+	background-image:url('../../images/st_louis_grayscale.png');
+	/*border: 1px solid #fff;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 200px 0;
+
+	p {
+		padding: 30px 0;
+	}
+
+	a.btn {
+		background: $cl-navy;
+		font-size: 16px;
+		padding: 16px 60px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.about h2:before {
+		bottom: -10px !important;
+		width: 20% !important;
+		left: 40% !important;
+	}
+}

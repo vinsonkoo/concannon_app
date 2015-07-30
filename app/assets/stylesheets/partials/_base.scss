@@ -1,6 +1,7 @@
 $cl-teal: #33c9c9;
 $cl-navy: #051f43;
 $cl-gray: #a9a9a9;
+$cl-yellow: #efe16a;
 
 @font-face {
   font-family: 'gothammedium';
@@ -12,7 +13,7 @@ $cl-gray: #a9a9a9;
   src:font-url('montserrat-bold.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'MONTSERRAT-REGULAR';
+  font-family: 'montserrat-regular';
   src:font-url('/montserrat-regular.ttf') format('truetype');
 }
 
@@ -48,12 +49,12 @@ TYPOGRAPHY
 body {
   font-size: 14px;
   line-height: 1.6;
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+  font-family: 'gothammedium', 'Helvetica Neue', 'Helvetica', 'Arial' !important;
   overflow-x: hidden;
   background: $cl-gray !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   font-family: 'gothammedium' !important;
   font-weight: normal;
 }
@@ -115,6 +116,13 @@ a.teal-btn:hover {
   -webkit-transition: opacity .5s ease-in-out;
 }
 
+
+.bs-glyphicon .glyphicon {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
 /**************************
 FORMS
 **************************/
@@ -145,22 +153,25 @@ button, input[type=submit] {
 COLORS
 **************************/
 .navy {
-  color: $cl-navy;
+  color: $cl-navy !important;
 }
 .navy-bg {
-  background: $cl-navy;
+  background: $cl-navy !important;
 }
 .teal {
-  color: $cl-teal;
+  color: $cl-teal !important;
 }
 .gray {
-  color: $cl-gray;
+  color: $cl-gray !important;
 }
 .white {
-  color: #fff;
+  color: #fff !important;
 }
 .navy-bg {
-  background: $cl-navy;
+  background: $cl-navy !important;
+}
+.yellow {
+  color: $cl-yellow !important;
 }
 
 
