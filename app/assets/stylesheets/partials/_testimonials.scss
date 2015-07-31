@@ -2,6 +2,14 @@
   width: 36px;
 }
 
+.carousel-inner .carousel-caption {
+  margin-top: 135px;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
 /*testimonials too long on smaller device widths. set bigger height*/
 @media screen and (max-width: 768px) {
   .carousel-inner {
