@@ -1,23 +1,11 @@
 $cl-teal: #33c9c9;
 $cl-navy: #051f43;
-$cl-gray: #e0e0e0;
-$cl-yellow: #efe16a;
-$cl-light-blue: #4fb4e5;
+$cl-gray: #e6e6e6;
+$cl-yellow: #ffea00;
+$cl-light-blue: #43befa;
 
-
-
-.about h2 {
+.about h1 {
 	margin-bottom: 20px;
-}
-
-.about h2.title:before {
-	content: "";
-	position: absolute;
-	left: 0;
-	bottom: 10px;
-	border-bottom: 2px solid $cl-teal;
-	width: 40%;
-	left: 30%;
 }
 
 .about {
@@ -32,16 +20,6 @@ $cl-light-blue: #4fb4e5;
 	}
 
 	.teal-border {
-		border: 10px solid $cl-teal;
-		background: #fff;
-		padding-bottom: 30px;
-		margin: 30px 15px;
-
-		span.underline {
-			border-bottom: 4px solid $cl-yellow;
-			padding-bottom: 8px;
-			line-height: 50px;
-		}
 
 		p {
 			margin-top: 20px;

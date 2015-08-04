@@ -1,0 +1,21 @@
+$cl-teal: #33c9c9;
+$cl-navy: #051f43;
+$cl-gray: #e6e6e6;
+$cl-yellow: #ffea00;
+$cl-light-blue: #43befa;
+
+.contact {
+
+
+	.navy-border {
+		background-image:url('../../images/stock-photo-20154232-young-business-boy-wearing-jetpack.jpg') !important;
+		background-size: cover !important;
+		background-repeat: no-repeat;
+		background-position: 0 -40px !important;
+		height: 600px;
+		margin: 30px 15px !important;
+		box-shadow: inset 0px 0px 0px 30px #fff;
+		padding: 30px 0;
+	}
+
+}

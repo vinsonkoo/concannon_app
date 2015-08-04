@@ -1,9 +1,8 @@
 $cl-teal: #33c9c9;
 $cl-navy: #051f43;
-$cl-gray: #e0e0e0;
-$cl-yellow: #efe16a;
-$cl-light-blue: #4fb4e5;
-
+$cl-gray: #e6e6e6;
+$cl-yellow: #ffea00;
+$cl-light-blue: #43befa;
 
 
 .about h1 {
@@ -23,9 +22,10 @@ $cl-light-blue: #4fb4e5;
 
 	.teal-border {
 
+		padding: 30px;
 
 		p {
-			margin-top: 20px;
+			margin-top: 25px;
 			font-size: 18px;
 		}
 

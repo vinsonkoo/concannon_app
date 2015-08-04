@@ -1,3 +1,10 @@
+$cl-teal: #33c9c9;
+$cl-navy: #051f43;
+$cl-gray: #e6e6e6;
+$cl-yellow: #ffea00;
+$cl-light-blue: #43befa;
+
+
 .testimonial-quote-img {
   width: 36px;
 }
@@ -24,8 +31,8 @@
 -------------------------------------------------- */
 
 .carousel-indicators li {
-  background: #051f43;
-  border: 1px solid #33c9c9 !important;
+  background: $cl-navy;
+  border: 1px solid $cl-teal !important;
   width: 16px !important;
   height: 16px !important;
   -webkit-transition: width .5s ease, height .5s ease;

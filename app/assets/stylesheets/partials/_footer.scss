@@ -1,3 +1,10 @@
+$cl-teal: #33c9c9;
+$cl-navy: #051f43;
+$cl-gray: #e6e6e6;
+$cl-yellow: #ffea00;
+$cl-light-blue: #43befa;
+
+
 footer {
 	background: #051f43;
 	padding: 15px 0;
@@ -12,7 +19,7 @@ footer p span {
 }
 
 @media screen and (max-width: 768px) {
-  footer {
-  	text-align: center;
+  footer p {
+  	text-align: center !important;
   }
 }

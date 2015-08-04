@@ -1,8 +1,9 @@
 $cl-teal: #33c9c9;
 $cl-navy: #051f43;
-$cl-gray: #a9a9a9;
-$cl-yellow: #efe16a;
-$cl-light-blue: #4fb4e5;
+$cl-gray: #e6e6e6;
+$cl-yellow: #ffea00;
+$cl-light-blue: #43befa;
+
 
 @font-face {
   font-family: 'gothammedium';
@@ -15,7 +16,7 @@ $cl-light-blue: #4fb4e5;
 }
 @font-face {
   font-family: 'montserrat-regular';
-  src:font-url('/montserrat-regular.ttf') format('truetype');
+  src:font-url('montserrat-regular.ttf') format('truetype');
 }
 
 /**************************
@@ -50,14 +51,15 @@ TYPOGRAPHY
 body {
   font-size: 14px;
   line-height: 1.6;
-  font-family: 'gothammedium', 'Helvetica Neue', 'Helvetica', 'Arial' !important;
+  font-family: 'montserrat-regular', 'Helvetica Neue', 'Helvetica', 'Arial' !important;
   overflow-x: hidden;
   background: $cl-gray !important;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  font-family: 'gothammedium' !important;
+  font-family: "montserrat-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
+  color: $cl-navy !important;
 }
 
 
@@ -69,7 +71,8 @@ a {
   -webkit-transition: opacity .5s ease-in-out;
 }
 a.btn {
-  border-radius: 5px;
+  font-family: "montserrat-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-radius: 10px;
   border: 0;
   padding: 10px 20px;
   background: $cl-navy;
@@ -93,9 +96,10 @@ a:hover {
   -webkit-transition: opacity .5s ease-in-out;
 }
 a.teal-btn {
+  font-family: "montserrat-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: inline-block;
   background: $cl-teal;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #fff;
   padding: 10px 20px;
   transition: color .5s ease-in-out !important;
@@ -117,7 +121,19 @@ a.teal-btn:hover {
   -webkit-transition: opacity .5s ease-in-out;
 }
 
+.gotham {
+  font-family: "gothammedium";
+}
 
+.montserrat {
+  font-family: "montserrat-regular";
+}
+
+.montserrat-bold {
+  font-family: "montserrat-bold";
+}
+
+/*glyphicon style for placeholders on team page*/
 .bs-glyphicon .glyphicon {
   margin-top: 5px;
   margin-bottom: 10px;

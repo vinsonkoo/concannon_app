@@ -1,8 +1,8 @@
 $cl-teal: #33c9c9;
 $cl-navy: #051f43;
-$cl-gray: #e0e0e0;
-$cl-yellow: #efe16a;
-$cl-light-blue: #4fb4e5;
+$cl-gray: #e6e6e6;
+$cl-yellow: #ffea00;
+$cl-light-blue: #43befa;
 
 
 .services h1 {
@@ -19,6 +19,7 @@ $cl-light-blue: #4fb4e5;
 			font-size: 20px;
 		}
 	}
+
 
 	.navy-border {
 		margin: 30px 15px;
@@ -63,28 +64,17 @@ $cl-light-blue: #4fb4e5;
 	> h3 {
 		background: #fff;
 		margin-top: 0;
-		line-height: 50px;
+		line-height: 60px;
 		margin-bottom: 70px;
 	}
 
-	h3.white {
-		/*margin-bottom: 80px;*/
-	}
-
-	.business-insurance h3.white:before,
-	.services-risk-management h3.white:before,
-	.personal-insurance h3.white:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 80px;
-    border-bottom: 4px solid $cl-light-blue;
-    width: 40%;
-    left: 30%;
-	}
 
 	span.yellow {
 		color: $cl-yellow;
+	}
+
+	span.gray {
+		color: #4e4e4f !important;
 	}
 
 	ul li {
@@ -95,6 +85,11 @@ $cl-light-blue: #4fb4e5;
 		content: "- ";
 	}
 
+	hr.blue-hr {
+		width: 40%;
+		margin-left: 30%;
+	}
+
 
 	a.btn {
 		font-size: 18px;
@@ -103,14 +98,13 @@ $cl-light-blue: #4fb4e5;
 		border: 2px solid $cl-teal;
 		white-space: normal;
 		width: 70%;
-		padding: 10px 40px;
+		padding: 10px 35px;
 		letter-spacing: 3px;
 	  transition: color .5s, border .5s ease-in-out !important;
 	  -moz-transition: color .5s, border .5s ease-in-out !important;
 	  -webkit-transition: color .5s, border .5s ease-in-out !important;
 	}
 	a.btn:hover {
-	  color: $cl-navy !important;
 	  border-color: $cl-navy;
 	  transition: color .5s, border .5s ease-in-out !important;
 	  -moz-transition: color .5s, border .5s ease-in-out !important;
@@ -123,13 +117,14 @@ $cl-light-blue: #4fb4e5;
 	/*border: 1px solid #fff;*/
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 200px 0;
+	padding: 150px 0;
 
-	.teal-btn {
-		border: 1px solid $cl-navy;
+	h1 {
+		margin-bottom: 100px;
 	}
 
 	a.btn {
+		padding: 12px 50px;
 		font-size: 36px;
 		transition: color .5s, border .5s ease-in-out !important;
 	  -moz-transition: color .5s, border .5s ease-in-out !important;
@@ -155,7 +150,6 @@ $cl-light-blue: #4fb4e5;
 
 	}
 	.services-cta {
-		/*height: 200px;*/
 
 		span.navy {
 			margin-right: 20px;

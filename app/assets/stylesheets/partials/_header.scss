@@ -1,7 +1,9 @@
 $cl-teal: #33c9c9;
 $cl-navy: #051f43;
-$cl-gray: #e0e0e0;
-$cl-yellow: #efe16a;
+$cl-gray: #e6e6e6;
+$cl-yellow: #ffea00;
+$cl-light-blue: #43befa;
+
 
 nav {
 	padding: 15px 0;
@@ -16,6 +18,7 @@ nav {
 }
 
 .navbar .navbar-brand {
+	font-family: "montserrat-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #ffffff !important;
 	transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
@@ -61,4 +64,8 @@ nav {
 	transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
   -webkit-transition: opacity .5s ease-in-out;
+}
+
+.nav > li > a {
+	padding: 10px 25px !important;
 }
