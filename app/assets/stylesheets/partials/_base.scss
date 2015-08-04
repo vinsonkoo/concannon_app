@@ -95,10 +95,10 @@ a:hover {
   -moz-transition: opacity .5s ease-in-out;
   -webkit-transition: opacity .5s ease-in-out;
 }
-a.teal-btn {
+a.teal-btn, button.teal-btn, input.teal-btn {
   font-family: "montserrat-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: inline-block;
-  background: $cl-teal;
+  background: $cl-teal !important;
   border-radius: 10px;
   color: #fff;
   padding: 10px 20px;
@@ -110,7 +110,7 @@ a.teal-btn {
   -moz-transition: opacity .5s ease-in-out;
   -webkit-transition: opacity .5s ease-in-out;
 }
-a.teal-btn:hover {
+a.teal-btn:hover, button.teal-btn:hover, input.teal-btn:hover {
   color: $cl-navy !important;
   transition: color .5s ease-in-out !important;
   -moz-transition: color .5s ease-in-out !important;

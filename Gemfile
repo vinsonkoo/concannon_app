@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'autoprefixer-rails'
 gem 'figaro'
+gem 'mail_form'
+gem 'simple_form'
 
 group :development do 
 	gem 'better_errors'

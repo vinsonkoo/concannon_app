@@ -6,16 +6,73 @@ $cl-light-blue: #43befa;
 
 .contact {
 
+	background: #ababab;
 
-	.navy-border {
-		background-image:url('../../images/stock-photo-20154232-young-business-boy-wearing-jetpack.jpg') !important;
-		background-size: cover !important;
-		background-repeat: no-repeat;
-		background-position: 0 -40px !important;
-		height: 600px;
-		margin: 30px 15px !important;
-		box-shadow: inset 0px 0px 0px 30px #fff;
-		padding: 30px 0;
+	h2.white {
+		margin: 50px 0;
 	}
 
+	.navy-border {
+		
+		margin: 0 30px;
+
+
+		.contact-bg-image {
+			background-image:url('../../images/stock-photo-20154232-young-business-boy-wearing-jetpack.jpg') !important;
+			background-size: cover !important;
+			background-repeat: no-repeat;
+			background-position: 0 -40px !important;
+			height: 600px;
+			box-shadow: inset 0px 0px 0px 30px #fff;
+			padding: 30px 0;
+		}
+	}
+
+	.contact-form {
+		
+		label.text, label.string, label.email {
+			display: none;
+		}
+
+		input.string, textarea {
+			width: 100%;
+		}
+
+		textarea {
+			height: 5em;
+		}
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	/*flash*/
+	.alert-error {
+		background-color: #f2dede;
+		border-color: #eed3d7;
+		color: #b94a48;
+		text-align: left;
+	}
+
+	.alert-alert {
+		background-color: #f2dede;
+		border-color: #eed3d7;
+		color: #b94a48;
+		text-align: left;
+	}
+
+	.alert-success {
+		background-color: #dff0d8;
+		border-color: #d6e9c6;
+		color: #468847;
+		text-align: left;
+	}
+
+	.alert-notice {
+		background-color: #dff0d8;
+		border-color: #d6e9c6;
+		color: #468847;
+		text-align: left;
+	}
 }
