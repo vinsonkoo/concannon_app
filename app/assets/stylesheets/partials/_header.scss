@@ -36,7 +36,7 @@ nav {
 	font-size: 120%;
 }
 .navbar-default .navbar-brand span {
-	font-size: 14px;
+	font-size: 10px;
 }
 
 .navbar .navbar-collapse ul.nav li a {
@@ -44,6 +44,7 @@ nav {
 	transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
   -webkit-transition: opacity .5s ease-in-out;
+  line-height: 30px;
 }
 .navbar .navbar-collapse ul.nav li a:hover {
 	opacity: 0.5;
@@ -52,10 +53,14 @@ nav {
   -webkit-transition: opacity .5s ease-in-out;
 }
 
+.navbar-brand {
+	/*margin-top: -4px;*/
+}
 .navbar-brand .logo {
 	width: 180px;
 	display: inline-block;
 	margin-bottom: 5px;
+	margin-top: -4px;
 }
 
 .navbar-default .navbar-nav > .active > a {
@@ -68,4 +73,11 @@ nav {
 
 .nav > li > a {
 	padding: 10px 25px !important;
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-brand span {
+		display: none;
+	}
+
 }
