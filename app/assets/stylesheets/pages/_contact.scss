@@ -40,6 +40,10 @@ $cl-light-blue: #43befa;
 
 		textarea {
 			height: 5em;
+			border: 1px solid #dddddd;
+		}
+		input[type=text], input[type=email], input[type=password] {
+			border-radius: 0;
 		}
 	}
 
@@ -75,4 +79,6 @@ $cl-light-blue: #43befa;
 		color: #468847;
 		text-align: left;
 	}
+
+
 }

@@ -1,8 +1,30 @@
-<div>
-  <% flash.each do |key, value| %>
-    <div>
-      <a href="#" data-dismiss="alert">×</a>
-        <%= value %>
-    </div>
-  <% end %>
+<div class="contact">
+	
+
+	<div class="row navy-border">
+		<div class="contact-bg-image">
+			<h1 class="text-center">CONTACT US</h1>
+			<p class="text-center teal"><em>LET'S CHAT</em></p>
+		</div>
+		<div class="container">
+
+			<div>
+			  <% flash.each do |key, value| %>
+			    <div>
+			      <a href="#" data-dismiss="alert">×</a>
+			        <%= value %>
+			    </div>
+			  <% end %>
+			</div>
+			
+			<%= render :partial => "contact_form" %>
+
+		</div>
+	</div>
+
+	<div class="container">
+		<h2 class="text-center white">LET CONCANNON PROTECT YOUR FUTURE</h2>
+	</div>
+
 </div>
+

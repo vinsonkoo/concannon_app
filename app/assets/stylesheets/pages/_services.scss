@@ -34,19 +34,30 @@ $cl-light-blue: #43befa;
 
 	.home-bg-2 {
 		background-image: none;
+		background-color: $cl-navy;
 
 		h2 {
-			color: $cl-navy;
+			color: $cl-teal;
+			margin-top: 90px;
 		}
 
+		.carousel-indicators {
+			bottom: 50px;
+		}
 		.carousel-indicators li {
 			background: $cl-teal;
+			display: none;
 		}
 
 		.carousel-indicators .active {
 			background: #fff;
 		}
+
+		.teal-btn {
+
+		}
 	}
+
 }
 
 .service-bg-image {
@@ -59,6 +70,7 @@ $cl-light-blue: #43befa;
 
   .myrow {
   	padding: 0 45px;
+  	padding-top: 30px;
   }
 
 	> h3 {
@@ -88,6 +100,13 @@ $cl-light-blue: #43befa;
 	hr.blue-hr {
 		width: 40%;
 		margin-left: 30%;
+	}
+
+	p.narrow-p,
+	p.narrow-p,
+	p.narrow-p {
+		font-style: italic;
+		font-size: 20px;
 	}
 
 
@@ -171,8 +190,11 @@ $cl-light-blue: #43befa;
 	.service-bg-image {
 		background-position: -450px 105px !important;
 
+
 		a.btn {
-  		width: 100%;
+  		width: 60%;
+  		font-size: 14px;
+  		padding: 5px;
 		}
 
 		> h3 {
@@ -224,15 +246,16 @@ $cl-light-blue: #43befa;
 	}
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
 	.service-bg-image {
 
-
-		.business-insurance {
+		a.btn {
+			width: 40%;
 		}
-		.business-insurance h3,
-		.services-risk-management h3,
-		.personal-insurance h3 {
+
+		.blue-hr {
+			width: 20% !important;
+			margin-left: 40% !important;
 		}
 	}	
 }
@@ -242,7 +265,6 @@ $cl-light-blue: #43befa;
 		.business-insurance p.narrow-p,
 		.services-risk-management p.narrow-p,
 		.personal-insurance p.narrow-p {
-			font-style: italic;
 			padding: 0 12.5%;
 		}
 

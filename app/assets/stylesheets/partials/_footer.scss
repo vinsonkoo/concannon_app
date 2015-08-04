@@ -18,6 +18,10 @@ footer p span {
 	color: #33c9c9;
 }
 
+footer p.text-right {
+	margin-top: 15px;
+}
+
 @media screen and (max-width: 768px) {
   footer p {
   	text-align: center !important;
