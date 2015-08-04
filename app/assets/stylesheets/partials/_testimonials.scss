@@ -10,7 +10,7 @@ $cl-light-blue: #43befa;
 }
 
 .carousel-inner .carousel-caption {
-  margin-top: 135px;
+  /*margin-top: 135px;*/
 }
 
 .carousel-indicators {
@@ -95,6 +95,9 @@ $cl-light-blue: #43befa;
   }
 }
 
+.carousel-control {
+  bottom: 180px !important;
+}
 
 /* Remove gradient from left/right arrows */
 .carousel-control.left, .carousel-control.right {
