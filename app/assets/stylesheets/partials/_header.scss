@@ -17,6 +17,33 @@ nav {
 	border: 0 !important;
 }
 
+@media screen and (max-width: 768px) {
+	.navbar-header {
+
+		.desk {
+			display: none;
+		}
+
+		span.mobile {
+			display: inline-block;
+			line-height: 50px;
+		}
+	}
+}
+@media screen and (min-width: 768px) {
+	.navbar-header {
+
+		span.mobile {
+			display: none;
+		}
+
+		.desk {
+			display: inline-block
+		}
+	}
+}
+
+
 .navbar .navbar-brand {
 	font-family: "montserrat-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #ffffff !important;
