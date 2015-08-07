@@ -39,6 +39,7 @@
     </div>
   </div>
   
+  <div class="clearfix"></div>
 
   <div class="col-md-6 panel panel-default">
     <div class="panel-heading" role="tab" id="headingThree">
@@ -60,7 +61,7 @@
 
 
   <div class="col-md-6 panel panel-default">
-    <div class="panel-heading" role="tab" id="headingFive">
+    <div class="panel-heading" role="tab" id="headingFour">
       <h4 class="panel-title text-center">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
           <span class="glyphicon glyphicon-user"></span>
@@ -77,6 +78,7 @@
     </div>
   </div>
   
+  <div class="clearfix"></div>
 
   <div class="col-md-6 panel panel-default">
     <div class="panel-heading" role="tab" id="headingFive">
@@ -115,6 +117,8 @@
     </div>
   </div>
 
+  <div class="clearfix"></div>
+
   <div class="col-md-6 panel panel-default">
     <div class="panel-heading" role="tab" id="headingSeven">
       <h4 class="panel-title text-center">
@@ -133,5 +137,6 @@
     </div>
   </div>
 
+  <div class="clearfix"></div>
 
 </div>

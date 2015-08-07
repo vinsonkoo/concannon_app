@@ -50,6 +50,11 @@ $cl-light-blue: #43befa;
 
 .team-members {
 	background: #e0e0e0;
+	padding: 50px 0;
+
+	h3 {
+		margin-bottom: 50px;
+	}
 
 	.glyphicon {
 		font-size: 60px;

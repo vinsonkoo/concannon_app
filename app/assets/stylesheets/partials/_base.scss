@@ -54,6 +54,7 @@ body {
   font-family: 'montserrat-regular', 'Helvetica Neue', 'Helvetica', 'Arial' !important;
   overflow-x: hidden;
   background: $cl-gray !important;
+  max-width: 1500px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -270,15 +271,25 @@ hr.blue-hr {
 .teal-border {
   border: 10px solid $cl-teal;
   background: #fff;
-  padding-bottom: 30px;
-  margin: 30px 15px !important;
+  padding: 50px;
+  margin: 50px 15px !important;
 }
 
 .navy-border {
     border: 10px solid $cl-navy;
     background: #fff;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+    margin: 50px 15px !important;
 }
+
+@media screen and (min-width: 1500px) {
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+
 
 @media screen and (max-width: 992px) {
   hr.blue-hr {
