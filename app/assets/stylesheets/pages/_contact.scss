@@ -29,6 +29,9 @@ $cl-light-blue: #43befa;
 	}
 
 	.contact-form {
+
+		width: 100%;
+		padding: 0 30px;
 		
 		label.text, label.string, label.email {
 			display: none;

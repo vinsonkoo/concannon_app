@@ -1,20 +1,20 @@
 <div class="contact-form">
-	<%= simple_form_for Contact.new, :url => contact_url, :html => {:class => 'form-horizontal' } do |f| %>
+	<%= simple_form_for @contact, :url => contact_url, :html => {:class => 'form-horizontal' } do |f| %>
 		<div class="form-group">
 			<%= label_tag 'name', 'Your Name' %>
-			<%= f.input :name, :required => true %>
+			<%= f.input :name, input_html: { class: 'form-control' }, :required => true %>
 		</div>
 		<div class="form-group">
 			<%= label_tag 'email', 'Email' %>
-			<%= f.input :email, :required => true %>
+			<%= f.input :email, input_html: { class: 'form-control' },:required => true %>
 		</div>
 		<div class="form-group">
 			<%= label_tag 'subject', 'Subject' %>
-			<%= f.input :subject, :required => true %>
+			<%= f.input :subject, input_html: { class: 'form-control' }, :required => true %>
 		</div>
 		<div class="form-group">
 			<%= label_tag 'message', 'Message' %>
-			<%= f.input :message, :as => :text, :required => true %>
+			<%= f.input :message, input_html: { class: 'form-control' },:as => :text, :required => true %>
 		</div>
 		<div class= "hidden">
       <%= f.input :nickname, :hint => 'Leave this field blank!' %>
