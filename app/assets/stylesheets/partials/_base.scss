@@ -272,6 +272,9 @@ hr.blue-hr {
   .teal-border {
     margin: 50px 15px !important;
   }
+  br.rwd-break {
+    display: block;
+  }
 }
 
 .navy-border {
@@ -288,11 +291,16 @@ hr.blue-hr {
   }
 }
 
-
-
 @media screen and (max-width: 992px) {
   hr.blue-hr {
     width: 30%;
     margin-left: 35%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  br.rwd-break {
+    display: none;
+  }
+}
+
