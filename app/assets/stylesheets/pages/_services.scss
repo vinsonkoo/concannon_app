@@ -22,7 +22,6 @@ $cl-light-blue: #43befa;
 
 
 	.navy-border {
-		margin: 30px 15px;
 
 		span.navy {
 			margin-right: 20px;
@@ -74,7 +73,6 @@ $cl-light-blue: #43befa;
 		background: #fff;
 		margin-top: 0;
 		line-height: 60px;
-		margin-bottom: 70px;
 	}
 
 
@@ -141,7 +139,6 @@ $cl-light-blue: #43befa;
 
 	a.btn {
 		padding: 12px 50px;
-		font-size: 36px;
 		transition: color .5s, border .5s ease-in-out !important;
 	  -moz-transition: color .5s, border .5s ease-in-out !important;
 	  -webkit-transition: color .5s, border .5s ease-in-out !important;
@@ -161,9 +158,16 @@ $cl-light-blue: #43befa;
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 	.service-bg-image {
 
+		> h3 {
+			margin-bottom: 70px;
+		}
+	}
+
+	.navy-border {
+		margin: 30px 15px !important;
 	}
 	.services-cta {
 
@@ -178,6 +182,7 @@ $cl-light-blue: #43befa;
 			margin-top: 40px;
 		}
 		a.btn {
+			font-size: 36px;
 			line-height: 56px;
 		}
 	}
@@ -196,6 +201,7 @@ $cl-light-blue: #43befa;
 
 		> h3 {
 			height: inherit;
+			margin-bottom: 40px;
 			
 			span {
 				display: block;
@@ -206,6 +212,11 @@ $cl-light-blue: #43befa;
 			}
 		}
 	}
+
+	.navy-border {
+    padding: 0 !important;
+    margin: 50px 0 !important;
+  }
 
 	.services-cta {
 		span.navy, span.white {

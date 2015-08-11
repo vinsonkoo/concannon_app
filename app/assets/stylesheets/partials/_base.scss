@@ -79,6 +79,9 @@ a.btn {
   background: $cl-navy;
   color: #fff !important;
   font-size: 18px;
+  transition: color .5s ease-in-out !important;
+  -moz-transition: color .5s ease-in-out !important;
+  -webkit-transition: color .5s ease-in-out !important;
   transition: opacity 500ms;
   &:hover {
     opacity: 1;
@@ -89,12 +92,9 @@ a:hover {
   text-decoration: none !important;
   color: $cl-teal !important;
   opacity: 0.6;
-  transition: color .5s ease-in-out !important;
-  -moz-transition: color .5s ease-in-out !important;
-  -webkit-transition: color .5s ease-in-out !important;
-  transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
+  transition: color .5s, opacity .5s ease-in-out !important;
+  -moz-transition: color .5s, opacity .5s ease-in-out !important;
+  -webkit-transition: color .5s, opacity .5s ease-in-out !important;
 }
 a.teal-btn, button.teal-btn, input.teal-btn {
   font-family: "montserrat-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -103,23 +103,16 @@ a.teal-btn, button.teal-btn, input.teal-btn {
   border-radius: 10px;
   color: #fff;
   padding: 10px 20px;
-  transition: color .5s ease-in-out !important;
-  -moz-transition: color .5s ease-in-out !important;
-  -webkit-transition: color .5s ease-in-out !important;
-  opacity: 0.9;
-  transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
+  transition: color .5s, opacity .5s ease-in-out !important;
+  -moz-transition: color .5s, opacity .5s ease-in-out !important;
+  -webkit-transition: color .5s, opacity .5s ease-in-out !important;
 }
 a.teal-btn:hover, button.teal-btn:hover, input.teal-btn:hover {
   color: $cl-navy !important;
-  transition: color .5s ease-in-out !important;
-  -moz-transition: color .5s ease-in-out !important;
-  -webkit-transition: color .5s ease-in-out !important;
+  transition: color .5s, opacity .5s ease-in-out !important;
+  -moz-transition: color .5s, opacity .5s ease-in-out !important;
+  -webkit-transition: color .5s, opacity .5s ease-in-out !important;
   opacity: 0.9;
-  transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
 }
 
 .gotham {
@@ -272,14 +265,20 @@ hr.blue-hr {
   border: 10px solid $cl-teal;
   background: #fff;
   padding: 50px;
-  margin: 50px 15px !important;
+  margin: 50px 15px;
+}
+
+@media screen and (min-width: 769px) {
+  .teal-border {
+    margin: 50px 15px !important;
+  }
 }
 
 .navy-border {
     border: 10px solid $cl-navy;
     background: #fff;
     padding-bottom: 50px;
-    margin: 50px 15px !important;
+    /*margin: 50px 15px !important;*/
 }
 
 @media screen and (min-width: 1500px) {

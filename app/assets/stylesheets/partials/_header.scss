@@ -25,10 +25,32 @@ nav {
 		}
 
 		span.mobile {
-			display: inline-block;
+			display: block;
 			line-height: 50px;
-			float: left;
+			text-align: center;
+			margin-left: 69px;
+
+			a.navbar-brand {
+				float: none;
+			}
 		}
+
+		span.concannon-number {
+			display: block;
+			text-align: center;
+			margin-left: 0;
+
+			.teal-phone {
+				width: 30px;
+			}
+
+			a.teal, a.teal:hover {
+				text-decoration: underline !important;
+			}
+		}
+	}
+	.navbar-brand span {
+		display: none;
 	}
 }
 @media screen and (min-width: 768px) {
@@ -81,9 +103,21 @@ nav {
   -webkit-transition: opacity .5s ease-in-out;
 }
 
-.navbar-brand {
-	/*margin-top: -4px;*/
+.navbar-toggle {
+	border-color: transparent !important;
+
+	.icon-bar {
+		background: #33c9c9 !important;
+	}
 }
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background: transparent !important;
+	transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+}
+
 .navbar-brand .logo {
 	width: 180px;
 	display: inline-block;
@@ -101,11 +135,4 @@ nav {
 
 .nav > li > a {
 	padding: 10px 25px !important;
-}
-
-@media screen and (max-width: 768px) {
-	.navbar-brand span {
-		display: none;
-	}
-
 }
