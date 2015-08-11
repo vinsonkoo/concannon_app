@@ -17,6 +17,10 @@ nav {
 	border: 0 !important;
 }
 
+.header-text {
+	font-size: 10px;
+}
+
 @media screen and (max-width: 768px) {
 	.navbar-header {
 
@@ -28,7 +32,7 @@ nav {
 			display: block;
 			line-height: 50px;
 			text-align: center;
-			margin-left: 69px;
+			margin-left: 60px;
 
 			a.navbar-brand {
 				float: none;
@@ -136,3 +140,5 @@ nav {
 .nav > li > a {
 	padding: 10px 25px !important;
 }
+
+
