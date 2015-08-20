@@ -1,5 +1,5 @@
 <div class="contact-form">
-	<%= simple_form_for @contact, :url => contact_url, :html => {:class => 'form-horizontal' } do |f| %>
+	<%= simple_form_for @contact, :url => contact_url, :html => {:class => 'container form-horizontal' } do |f| %>
 		<div class="form-group">
 			<%= label_tag 'name', 'Your Name' %>
 			<%= f.input :name, input_html: { class: 'form-control' }, :required => true %>
