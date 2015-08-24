@@ -1,85 +1,43 @@
 <%
 =begin
-<div class="container logos-carousel">
-	<div class="col-md-12 text-center"><h3>Bootstrap 3 Multiple Slide Carousel</h3></div>
-	<div class="col-md-6 col-md-offset-3">
-		<div class="carousel slide" id="myCarousel">
-		  <div class="carousel-inner">
-		    <div class="item active">
-		      <div class="col-xs-3"><a href="#"><img src="http://placehold.it/500/e499e4/fff&amp;text=1" class="img-responsive"></a></div>
-		    </div>
-		    <div class="item">
-		      <div class="col-xs-3"><a href="#"><img src="http://placehold.it/500/e477e4/fff&amp;text=2" class="img-responsive"></a></div>
-		    </div>
-		    <div class="item">
-		      <div class="col-xs-3"><a href="#"><img src="http://placehold.it/500/eeeeee&amp;text=3" class="img-responsive"></a></div>
-		    </div>
-		    <div class="item">
-		      <div class="col-xs-3"><a href="#"><img src="http://placehold.it/500/f4f4f4&amp;text=4" class="img-responsive"></a></div>
-		    </div>
-		    <div class="item">
-		      <div class="col-xs-3"><a href="#"><img src="http://placehold.it/500/f566f5/333&amp;text=5" class="img-responsive"></a></div>
-		    </div>
-		    <div class="item">
-		      <div class="col-xs-3"><a href="#"><img src="http://placehold.it/500/f477f4/fff&amp;text=6" class="img-responsive"></a></div>
-		    </div>
-		    <div class="item">
-		      <div class="col-xs-3"><a href="#"><img src="http://placehold.it/500/eeeeee&amp;text=7" class="img-responsive"></a></div>
-		    </div>
-		    <div class="item">
-		      <div class="col-xs-3"><a href="#"><img src="http://placehold.it/500/fcfcfc/333&amp;text=8" class="img-responsive"></a></div>
-		    </div>
-		  </div>
-		  <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-		  <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a> -->
-		</div>
-	</div>
-</div>
-
-
-<script>
-$('#myCarousel').carousel({
-  interval: 5000
-})
-
-$('.carousel .item').each(function(){
-  var next = $(this).next();
-  if (!next.length) {
-    next = $(this).siblings(':first');
-  }
-  next.children(':first-child').clone().appendTo($(this));
-  
-  for (var i=0;i<2;i++) {
-    next=next.next();
-    if (!next.length) {
-    	next = $(this).siblings(':first');
-  	}
-    
-    next.children(':first-child').clone().appendTo($(this));
-  }
-});
-</script>
-
-<div class="col-sm-3">
-	<img src="../../images/better-future-nl.png">
-</div>
-<div class="col-sm-3">
-	<img src="../../images/carpenters-union.png">
-</div>
-<div class="col-sm-3">
-	<img src="../../images/challenge-unlimited.png">
-</div>
-<div class="col-sm-3">
-	<img src="../../images/dynalabs.png">
-</div>
+Logos carousel with pure CSS
 =end %>
 <div class="row logos-carousel">
 	<div class="container logos">
 
-		<img src="../../images/better-future-nl.png">
-		<img src="../../images/carpenters-union.png">
-		<img src="../../images/challenge-unlimited.png">
-		<img src="../../images/dynalabs.png">
+		<div class="col-xs-4">
+			<div class="logo-container">
+				<img src="../../images/better-future-us.png">
+			</div>
+			<div class="logo-container">
+				<img src="../../images/carpenters-union.png">
+			</div>
+			<div class="logo-container">
+				<img src="../../images/challenge-unlimitted-concannon-insurance.png">
+			</div>
+		</div>
+		<div class="col-xs-4">
+			<div class="logo-container">
+				<img src="../../images/concannon-insurance-clients-cratex-packaging.png">
+			</div>
+			<div class="logo-container">
+				<img src="../../images/concannon-insurance-clients-senior-care-services.png">
+			</div>
+			<div class="logo-container">
+				<img src="../../images/dynalabs.png">
+			</div>
+		</div>
+		<div class="col-xs-4">
+			<div class="logo-container">
+				<img src="../../images/reliance-automotive.png">
+			</div>
+			<div class="logo-container">
+				<img src="../../images/the-globe-building.png">
+			</div>
+			<div class="logo-container">
+				<img src="../../images/thebreesejournal.png">
+			</div>
+		</div>
 
 	</div>
 </div>
