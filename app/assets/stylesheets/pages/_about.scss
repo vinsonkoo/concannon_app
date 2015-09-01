@@ -36,7 +36,7 @@ $cl-light-blue: #43befa;
 }
 
 .about-cta {
-	background-image:url('../../images/st-louis-concannon-insurance.jpg');
+	background-image:url('../../images/st-louis-concannon-insurance-light.jpg');
 	/*border: 1px solid #fff;*/
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -51,6 +51,15 @@ $cl-light-blue: #43befa;
 		font-size: 16px;
 		padding: 16px 60px;
 	}
+}
+
+.clients-trust {
+	
+	h2 {
+		line-height: 0 !important;
+		margin-bottom: 20px;
+	}	
+
 }
 
 @media screen and (max-width: 768px) {

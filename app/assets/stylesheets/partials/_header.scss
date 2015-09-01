@@ -17,9 +17,7 @@ nav {
 	border: 0 !important;
 }
 
-.header-text {
-	font-size: 10px;
-}
+
 
 @media screen and (max-width: 768px) {
 	.navbar-header {
@@ -30,13 +28,15 @@ nav {
 
 		span.mobile {
 			display: block;
-			line-height: 50px;
 			text-align: center;
 			margin-left: 60px;
 
 			a.navbar-brand {
 				float: none;
 			}
+      .header-text {
+        font-size: 8px;
+      }
 		}
 
 		span.concannon-number {
@@ -45,19 +45,30 @@ nav {
 			margin-left: 0;
 
 			.teal-phone {
-				width: 30px;
+				width: 25px;
 			}
 
-			a.teal, a.teal:hover {
-				text-decoration: underline !important;
-			}
+      a.phone-number {
+        font-size: 10px;
+        line-height: 50px
+      }
 		}
 	}
-	.navbar-brand span {
-		display: none;
+	.navbar-brand {
+
+    .logo {
+      width: 240px
+    }
+    span {
+		  display: none;
+    }
 	}
 }
 @media screen and (min-width: 769px) {
+  .navbar-brand .logo {
+    width: 180px;
+  }
+
 	.navbar-header {
 
 		span.mobile {
@@ -123,9 +134,7 @@ nav {
 }
 
 .navbar-brand .logo {
-	width: 180px;
 	display: inline-block;
-	margin-bottom: 5px;
 	margin-top: -4px;
 }
 

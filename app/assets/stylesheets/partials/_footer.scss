@@ -23,7 +23,15 @@ footer p.text-right {
 }
 
 @media screen and (max-width: 768px) {
-  footer p {
-  	text-align: center !important;
+  footer {
+
+    span.white {
+      text-align: center;
+      display: block;
+    }
+
+    p {
+  	 text-align: center !important;
+    }
   }
 }

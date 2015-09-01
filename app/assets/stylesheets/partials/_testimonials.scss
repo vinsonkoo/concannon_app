@@ -10,7 +10,6 @@ $cl-light-blue: #43befa;
 }
 
 .carousel-inner .carousel-caption {
-  /*margin-top: 135px;*/
 }
 
 
@@ -95,7 +94,7 @@ $cl-light-blue: #43befa;
 @media screen and (max-width: 768px) {
   .carousel-caption p {
     line-height: 1.4em;
-    font-size: 18px;
+    font-size: 14px;
   }
   .testimonial-cta {
     display: none !important;
