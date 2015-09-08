@@ -19,6 +19,7 @@ nav {
 
 
 
+
 @media screen and (max-width: 768px) {
 	.navbar-header {
 
@@ -100,12 +101,14 @@ nav {
 .navbar-brand::first-letter {
 	font-size: 120%;
 }
-.navbar-default .navbar-brand span {
+.navbar-default .navbar-brand span.header-text {
+  display: block;
 	font-size: 10px;
 }
 
 .navbar .navbar-collapse ul.nav li a {
 	color: $cl-teal;
+  background: $cl-navy;
 	transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
   -webkit-transition: opacity .5s ease-in-out;
@@ -138,7 +141,8 @@ nav {
 	margin-top: -4px;
 }
 
-.navbar-default .navbar-nav > .active > a {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav li .dropdown-menu > .active > a {
 	background: none !important;
 	color: $cl-yellow !important;
 	transition: opacity .5s ease-in-out;
@@ -151,3 +155,10 @@ nav {
 }
 
 
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background: transparent !important;
+}
+
+.dropdown-menu {
+  background: transparent !important;
+}

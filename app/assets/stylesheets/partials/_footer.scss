@@ -10,16 +10,22 @@ footer {
 	padding: 15px 0;
 }
 
-footer p {
-	color: #ffffff;
-}
+footer {
+  p {
+	 color: #ffffff;
 
-footer p span {
-	color: #33c9c9;
-}
+   span {
+    color: #33c9c9;
+   }
+  }
+  
+  p.text-right {
+    margin-top: 15px;
+  }
 
-footer p.text-right {
-	margin-top: 15px;
+  .logo {
+    width: 180px;
+  }
 }
 
 @media screen and (max-width: 768px) {
