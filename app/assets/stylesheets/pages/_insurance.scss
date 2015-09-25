@@ -25,12 +25,12 @@ $cl-light-blue: #43befa;
 		}
 
 		ul li {
-			list-style-type: none;
-			font-size: 20px;
+			list-style-type: disc;
+			font-size: 18px;
 		}
 
 		ul li:before {
-			content: "- ";
+			// content: "- ";
 		}
 		a {
 			text-decoration: underline;
