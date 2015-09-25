@@ -9,15 +9,16 @@ class ContactController < ApplicationController
 		@contact = Contact.new(params[:contact])
 		@contact.request = request
 		if @contact.deliver
-			flash.now[:notice] = "Thank you for your message. We will contact you soon!"
+			flash.now[:notice] = "Thank you for your message. Our Concannon representatives will contact you soon!"
+			render :new
 		else
-			flash.now[:error] = "Cannot send message."
+			flash.now[:error] = "There was an error sending your form, please try again."
 			render :new
 		end
 
 		# name = params[:name]
 		# email = params[:email]
-		# subject = params[:subject]
+		# subject = params[:phone_number]
 		# message = params[:message]
 		# ContactMailer.contact_email(name, email, body).deliver
 		# redirect_to contact_path, notice: 'Message sent'
