@@ -83,18 +83,14 @@ a.btn {
   -moz-transition: color .5s ease-in-out !important;
   -webkit-transition: color .5s ease-in-out !important;
   transition: opacity 500ms;
-  &:hover {
-    opacity: 1;
-  }
-
 }
 a:hover {
   text-decoration: none !important;
-  color: $cl-teal !important;
-  opacity: 0.6;
-  transition: color .5s, opacity .5s ease-in-out !important;
-  -moz-transition: color .5s, opacity .5s ease-in-out !important;
-  -webkit-transition: color .5s, opacity .5s ease-in-out !important;
+  // color: $cl-teal !important;
+  // // opacity: 0.6;
+  // transition: color .5s, opacity .5s ease-in-out !important;
+  // -moz-transition: color .5s, opacity .5s ease-in-out !important;
+  // -webkit-transition: color .5s, opacity .5s ease-in-out !important;
 }
 a.teal-btn, button.teal-btn, input.teal-btn {
   font-family: "montserrat-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -268,7 +264,7 @@ hr.blue-hr {
   margin: 50px 15px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .teal-border {
     margin: 50px 15px !important;
   }
@@ -298,7 +294,7 @@ hr.blue-hr {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   br.rwd-break {
     display: none;
   }

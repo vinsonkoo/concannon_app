@@ -24,20 +24,21 @@ footer {
   }
 
   .logo {
-    width: 180px;
+    width: 300px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   footer {
 
     span.white {
-      text-align: center;
+      text-align: left;
       display: block;
+      margin-bottom: 10px;
     }
 
     p {
-  	 text-align: center !important;
+  	 // text-align: center !important;
     }
   }
 }
