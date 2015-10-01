@@ -10,9 +10,9 @@ $cl-light-blue: #43befa;
 	
 	.home-bg-1 {
 		background-image:url('../../images/thoughtful-professional.jpg');
-		/*background-size: cover;*/
-		/*background-repeat: no-repeat;*/
-		height: 400px !important;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 600px !important;
 		background-position-y: -100px !important;
 
 		a.btn {
@@ -31,7 +31,6 @@ $cl-light-blue: #43befa;
 	}
 	.home-bg-2 {
 		background-image:url('../../images/business-meeting.jpg');
-		/*padding: 50px 0;*/
 
 		h2 {
 			margin-top: 90px;
@@ -39,7 +38,7 @@ $cl-light-blue: #43befa;
 	}
 
 	.desc {
-		padding: 50px 0;
+		/*padding: 50px 0;*/
 		line-height: 1.5em;
 
 		span {
@@ -93,12 +92,16 @@ h3.desc {
 		border-bottom: 20px solid #fff;
 		margin: 25px 0;
 	}
-	.home-risk-management , .pi-coverage {
+	.home-risk-management {
 		-webkit-box-shadow:inset 3px 0px 0px 0px #000;
 	  -moz-box-shadow:inset 3px 0px 0px 0px #000;
 	  box-shadow:inset 3px 0px 0px 0px #000;
 	}
-
+	.bi-coverage {
+		-webkit-box-shadow:inset -3px 0px 0px 0px #000;
+	  -moz-box-shadow:inset -3px 0px 0px 0px #000;
+	  box-shadow:inset -3px 0px 0px 0px #000;
+	}
 }
 
 @media screen and (max-width: 767px) {
