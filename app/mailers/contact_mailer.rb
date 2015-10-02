@@ -8,7 +8,8 @@ class ContactMailer < ApplicationMailer
 	def contact_email(user)
 		@name = name
 		@email = email
-		@subject = subject
+		@phone_number = phone_number
+		@company_name = company_name
 		@message = message
 
 		mail(to: 'vinson@hindsitemetrics.com', from: email, subject: subject)

@@ -71,6 +71,14 @@ a {
   -moz-transition: opacity .5s ease-in-out;
   -webkit-transition: opacity .5s ease-in-out;
 }
+a:hover {
+  // text-decoration: none !important;
+  // color: $cl-teal !important;
+  // // opacity: 0.6;
+  // transition: color .5s, opacity .5s ease-in-out !important;
+  // -moz-transition: color .5s, opacity .5s ease-in-out !important;
+  // -webkit-transition: color .5s, opacity .5s ease-in-out !important;
+}
 a.btn {
   font-family: "montserrat-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-radius: 10px;
@@ -83,14 +91,6 @@ a.btn {
   -moz-transition: color .5s ease-in-out !important;
   -webkit-transition: color .5s ease-in-out !important;
   transition: opacity 500ms;
-}
-a:hover {
-  text-decoration: none !important;
-  // color: $cl-teal !important;
-  // // opacity: 0.6;
-  // transition: color .5s, opacity .5s ease-in-out !important;
-  // -moz-transition: color .5s, opacity .5s ease-in-out !important;
-  // -webkit-transition: color .5s, opacity .5s ease-in-out !important;
 }
 a.teal-btn, button.teal-btn, input.teal-btn {
   font-family: "montserrat-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;

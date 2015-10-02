@@ -19,7 +19,7 @@ $cl-light-blue: #43befa;
 		font-size: 20px;
 	}
 
-	.teal-border {
+	.navy-border {
 
 		p {
 			margin-top: 20px;
@@ -29,9 +29,17 @@ $cl-light-blue: #43befa;
 		a {
 			text-decoration: underline;
 		}
+		a:hover {
+			text-decoration: underline;
+			color: $cl-teal !important;
+			transition: color .5s ease-in-out !important;
+		  -moz-transition: color .5s ease-in-out !important;
+		  -webkit-transition: color .5s ease-in-out !important;
+		}
 	}
 	.home-bg-2 {
 		background-image: none;
+		background-color: $cl-navy;
 	}
 }
 
@@ -50,6 +58,15 @@ $cl-light-blue: #43befa;
 		background: $cl-navy;
 		font-size: 16px;
 		padding: 16px 60px;
+		transition: opacity .5s ease-in-out !important;
+	  -moz-transition: opacity .5s ease-in-out !important;
+	  -webkit-transition: opacity .5s ease-in-out !important;
+	}
+	a.btn:hover {
+		transition: opacity .5s ease-in-out !important;
+	  -moz-transition: opacity .5s ease-in-out !important;
+	  -webkit-transition: opacity .5s ease-in-out !important;
+	  opacity: 0.6;
 	}
 }
 
