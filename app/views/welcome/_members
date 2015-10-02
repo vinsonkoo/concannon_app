@@ -64,8 +64,8 @@
     <div class="panel-heading" role="tab" id="headingFour">
       <h4 class="panel-title text-center">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          <%= image_tag("/images/tammy-mayer.png", class: "headshot") %>
-          <p>Tammy Mayer</p>
+          <%= image_tag("/images/tammy-meyer.png", class: "headshot") %>
+          <p>Tammy Meyer</p>
           <p class="teal">Assistant Vice President</p>
           <p><span class="yellow">+</span><span class="underline white">READ MORE</span></p>
         </a>
