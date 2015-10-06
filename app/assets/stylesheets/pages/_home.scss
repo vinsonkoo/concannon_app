@@ -28,10 +28,6 @@ $cl-light-blue: #43befa;
 	}
 	.home-bg-2 {
 		background-image:url('../../images/business-meeting.jpg');
-
-		h2 {
-			margin-top: 90px;
-		}
 	}
 
 	.desc {
@@ -126,11 +122,15 @@ h3.desc {
 @media screen and (min-width: 768px) {
 	.home-bg-2 {
 		padding: 50px 0;
+		h2 {
+			margin-top: 90px;
+		}
 	}
 	.home-bg-1 {
 		height: 600px !important;
 		background-position-y: -100px !important;	
-		h2 {
+		
+		h1 {
 			margin-top: 80px;
 			margin-bottom: 40px;
 		}
