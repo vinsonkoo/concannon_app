@@ -44,6 +44,34 @@ $cl-light-blue: #43befa;
 			text-decoration: underline;
 		}
 	}
+	hr.risk-teal-hr {
+	  display: block;
+	  border: 0;
+	  border-top: 5px solid $cl-teal;
+	  width: 20%;
+	  margin-left: 40%;
+	}
+
+	.insurance-image {
+		width: 100%;
+		margin-top: 15px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.insurance { 
+		.navy-bg {
+			h1 {
+				text-align: left;
+			}
+			hr.teal-hr {
+				margin-left: 15%
+			}
+			hr.risk-teal-hr {
+				margin-left: 40%
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 768px) {

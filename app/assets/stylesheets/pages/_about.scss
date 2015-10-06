@@ -89,9 +89,19 @@ $cl-light-blue: #43befa;
 }
 
 @media screen and (max-width: 767px) {
-	.about h2:before {
-		bottom: -10px !important;
-		width: 20% !important;
-		left: 40% !important;
+	.about {
+		.navy-bg {
+			h1 {
+				text-align: left;
+			}
+		}
+		h2:before {
+			bottom: -10px !important;
+			width: 20% !important;
+			left: 40% !important;
+		}
+		hr.teal-hr {
+			margin-left: 15%;
+		}
 	}
 }
