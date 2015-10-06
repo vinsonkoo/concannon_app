@@ -24,7 +24,8 @@ footer {
   }
 
   .logo {
-    width: 300px;
+    width: 265px;
+    max-width: 100%;
   }
   a {
     transition: color .5s ease-in-out;
@@ -41,15 +42,18 @@ footer {
 
 @media screen and (max-width: 767px) {
   footer {
+    > .container > .col-sm-4 p{
+      text-align: center;
+    }
 
     span.white {
       text-align: left;
       display: block;
       margin-bottom: 10px;
     }
+    
+    .logo {
 
-    p {
-  	 // text-align: center !important;
     }
   }
 }
