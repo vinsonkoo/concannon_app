@@ -46,13 +46,17 @@ $cl-light-blue: #43befa;
 			background: #fff;
 		}
 	}
+
+	.teal-border {
+		padding: 0 50px;
+	}
 }
 
 .team-members {
 	background: #e0e0e0;
-	padding: 50px 0;
 
-	h3 {
+
+	h2 {
 		margin-bottom: 50px;
 	}
 
@@ -61,88 +65,12 @@ $cl-light-blue: #43befa;
 		color: #000;
 	}
 
-	ul#tabs li {
-		text-align: center;
-	}
-
-	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-		background-color: inherit !important;
-		color: $cl-navy !important;
-	}
-	
-	.nav-tabs > li > a {
-		border: none;
-	}
-	
-	.nav-tabs > li > a:hover {
-		background: inherit;
-		border-color: inherit;
-	}
-
-	.dropdown-toggle {
-		text-align: center;
-	}
-
-	.dropdown, .dropdown p {
-		color: #000;
-	}
-
-	.dropdown p.white span{
-		text-decoration: underline;
-	}
-	.dropdown p.white:before {
-		content: "+";
-		color: #efe16a;
-	}
-
-	/* FULL WIDTH DROPDOWN FOR TEAM MEMBERS */
-	.nav { 
-		margin-bottom: 0;
-		width: 100%;
-		background-color: #e0e0e0;
-	}
-	.nav > li.dropdown.open {
-		position: static;
-	}
-	.nav > li.dropdown.open .dropdown-menu {
-		display:table;
-		width: 100%;
-		text-align: center;
-		left:0;
-		right:0;
-	}
-	.dropdown-menu > li {
-		display: table-cell;
-	}
-
-	/*override twitter bootstrap styles for panels*/
-	.panel-group .panel {
-		background: inherit;
-		margin-bottom: 5px;
-		box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);
-	}
-	.panel-group .panel + .panel {
-		margin-top: 0;
-	}
-	.panel-default {
-		border: 0px solid #d4d4d4;
-	}
-	.panel-default > .panel-heading {
-		background: inherit;
-		border: 1px solid #d4d4d4;
-	}
-	.collapse.in {
-		border: 1px solid #d4d4d4;
-		border-top: 0px;
-	}
-
-
-	span.underline {
-		text-decoration: underline;
-	}
-
 	img.headshot {
 		width: 150px;
+	}
+
+	.person {
+		margin-bottom: 50px;
 	}
 }
 
