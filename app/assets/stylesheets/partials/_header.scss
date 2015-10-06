@@ -56,14 +56,41 @@ nav {
 
 	.navbar-header {
 
-		span.mobile {
-			display: none;
-		}
-
 		.desk {
 			display: inline-block;
 		}
+
 	}
+}
+
+@media screen and (min-width: 481px) {
+  .navbar-header {
+
+    span.mobile {
+      display: none;
+    }
+
+    .navbar-brand .logo {
+      width: 350px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-header {
+    
+    a.navbar-brand {
+      margin-left: 0;
+    }
+
+    .logo {
+      width: 320px;
+    }
+
+    span.concannon-number {
+      display: block;
+    }
+  }
 }
 
 
@@ -115,7 +142,6 @@ nav {
 
 .navbar-brand .logo {
 	display: inline-block;
-  width: 350px;
   margin-top: -25px;
 }
 

@@ -6,7 +6,7 @@
     <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title text-center">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-          <%= image_tag("/images/jim-concannon.png", class: "headshot") %>
+          <%= image_tag("/images/headshot-jim-concannon.jpg", class: "headshot") %>
           <p>James (Jim) Concannon</p>
           <p class="teal">President, CEO &amp; Owner</p>
           <p><span class="yellow">+</span><span class="underline white">READ MORE</span></p>
@@ -15,7 +15,9 @@
     </div>
     <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body">
-        <p>Jim is an insurance industry executive with over 25 years of hands-on experience. He worked under both his grandfather, Emmett Concannon, and his father, Michael Concannon, where he learned the art of client management and the ins-and-outs of the insurance industry. Jim earned his BSBA in Business from the University of Tulsa, and holds a Commercial Lines Coverage Specialist designation. He lives in New York City with his husband, Jason, where he heads the east coast office for The Concannon Insurance Agency. In his spare time, Jim enjoys traveling, running half marathons and serves on the Board of Directors of the Alton, Illinois nonprofit Challenge Unlimited.</p>
+        <p>Jim is an insurance industry executive with over 25 years of hands-on experience. He worked under both his grandfather, Emmett Concannon, and his father, Michael Concannon, where he learned the art of client management and the ins-and-outs of the insurance industry. Jim earned his BSBA in Business from the University of Tulsa, and holds a Commercial Lines Coverage Specialist designation.</p>
+        <p>He lives in New York City with his husband, Jason, where he heads the east coast office for The Concannon Insurance Agency. In his spare time, Jim enjoys traveling, running half marathons and serves on the Board of Directors of the Alton, Illinois nonprofit Challenge Unlimited.</p> 
+        <p><a href="mailto:jim@concannonagency.com">jim@concannonagency.com</a></p>
       </div>
     </div>
   </div>
@@ -25,7 +27,7 @@
     <div class="panel-heading" role="tab" id="headingTwo">
       <h4 class="panel-title text-center">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <%= image_tag("/images/john-concannon.png", class: "headshot") %>
+          <%= image_tag("/images/headshot-john-concannon.jpg", class: "headshot") %>
           <p>John Concannon</p>
           <p class="teal">Vice President &amp; Owner</p>
           <p><span class="yellow">+</span><span class="underline white">READ MORE</span></p>
@@ -34,7 +36,8 @@
     </div>
     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
       <div class="panel-body">
-        <p>With over 15 years of insurance industry experience, John oversees client relationships and new business development for Concannon Insurance Agency.  He has earned professional certifications as a Certified Identity Theft Risk Management Specialist (CITRMS) and a Certified Insurance Service Representative (CISR). Fluent in Spanish, John has become a leading insurance specialist catering to Hispanic-owned businesses. John holds a BA from the University of Missouri-Columbia and has completed advanced studies at the Universidad Autonoma de Guadalajara in Guadalajara, Mexico. John met his wife, Adria, while living in Mexico City in 2001 and has two sons. Outside of the office, John enjoys boating at the Lake of the Ozarks, traveling to Mexico with his family, and coaching his son's baseball team.</p>
+        <p>With over 15 years of insurance industry experience, John oversees client relationships and new business development for Concannon Insurance Agency.  He has earned professional certifications as a Certified Identity Theft Risk Management Specialist (CITRMS) and a Certified Insurance Service Representative (CISR).</p>
+        <p>Fluent in Spanish, John has become a leading insurance specialist catering to Hispanic-owned businesses. John holds a BA from the University of Missouri-Columbia and has completed advanced studies at the Universidad Autonoma de Guadalajara in Guadalajara, Mexico. John met his wife, Adria, while living in Mexico City in 2001 and has two sons. Outside of the office, John enjoys boating at the Lake of the Ozarks, traveling to Mexico with his family, and coaching his son's baseball team.</p><p><a href="mailto:john@concannonagency.com">john@concannonagency.com</a></p>
       </div>
     </div>
   </div>
@@ -45,7 +48,7 @@
     <div class="panel-heading" role="tab" id="headingThree">
       <h4 class="panel-title text-center">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          <span class="glyphicon glyphicon-user"></span>
+          <%= image_tag("/images/headshot-michael-concannon.jpg", class: "headshot") %>
           <p>Michael Concannon</p>
           <p class="teal">Consultant &amp; Owner </p>
           <p><span class="yellow">+</span><span class="underline white">READ MORE</span></p>
@@ -54,7 +57,8 @@
     </div>
     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
       <div class="panel-body">
-        <p>Michael brings over 50 years of insurance and client management experience to The Concannon Insurance Agency. In 1960, he started working as an apprentice at The Concannon Insurance Agency under his father, Emmett Concannon, and has since worked his way up to lead the organization since 1980s. Throughout his tenure, Michael has dedicated his career to helping both established organizations and entrepreneurial individuals achieve their personal and professional dreams. Michael hold a BA from St. Louis University and lives in St. Louis, Missouri with his wife of more than 50 years, Jane. Michael is an avid boater and enjoys spending time with his nine grandchildren.</p>
+        <p>Michael brings over 50 years of insurance and client management experience to The Concannon Insurance Agency. In 1960, he started working as an apprentice at The Concannon Insurance Agency under his father, Emmett Concannon, and has since worked his way up to lead the organization since 1980s.</p>
+        <p>Throughout his tenure, Michael has dedicated his career to helping both established organizations and entrepreneurial individuals achieve their personal and professional dreams. Michael hold a BA from St. Louis University and lives in St. Louis, Missouri with his wife of more than 50 years, Jane. Michael is an avid boater and enjoys spending time with his nine grandchildren.</p>
       </div>
     </div>
   </div>
@@ -64,7 +68,7 @@
     <div class="panel-heading" role="tab" id="headingFour">
       <h4 class="panel-title text-center">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          <%= image_tag("/images/tammy-meyer.png", class: "headshot") %>
+          <%= image_tag("/images/headshot-tammy-meyer.jpg", class: "headshot") %>
           <p>Tammy Meyer</p>
           <p class="teal">Assistant Vice President</p>
           <p><span class="yellow">+</span><span class="underline white">READ MORE</span></p>
@@ -73,7 +77,9 @@
     </div>
     <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
       <div class="panel-body">
-        <p>Tammy is a veteran of the insurance business with more than 35 years of hands on industry and management expertise. She has been with The Concannon Insurance Agency since 1995 and currently serves at the Assistant Vice President where she oversees account management across enterprise and small business clients. Tammy is both a Certified Insurance Service Representative and is a Licensed Property &amp; Casualty Broker. She lives in St. Louis, Missouri with her husband, Rick, and her two kids. Tammy is a passionate outdoorsman and enjoys contributing to volunteer activities throughout her community in her spare time.</p>
+        <p>Tammy is a veteran of the insurance business with more than 35 years of hands on industry and management expertise. She has been with The Concannon Insurance Agency since 1995 and currently serves at the Assistant Vice President where she oversees account management across enterprise and small business clients.</p>
+        <p>Tammy is both a Certified Insurance Service Representative and is a Licensed Property &amp; Casualty Broker. She lives in St. Louis, Missouri with her husband, Rick, and her two kids. Tammy is a passionate outdoorsman and enjoys contributing to volunteer activities throughout her community in her spare time.</p>
+        <p><a href="mailto:tammy@concannonagency.com">tammy@concannonagency.com</a></p>
       </div>
     </div>
   </div>
@@ -93,7 +99,8 @@
     </div>
     <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
       <div class="panel-body">
-        <p>Michael has been working with The Concannon Insurance Agency for nearly a decade and brings with him 20+ years of professional loss control experience from numerous sectors, such as healthcare, manufacturing, construction and service industries. He is both a property assessment specialist and is an expert on reducing workers compensation costs in all industries. As a leader in the risk management field, Michael is mastermind behind Zero Accident Culture® (ZAC®), a revolutionary program geared towards eliminating workplace injuries by systematically reducing hazards, modifying unsafe behaviors, and building an organization-wide commitment to health and safety. At The Concannon Insurance Agency, Michael provide clients with the Zero Accident Culture® program training and in-depth assistance on loss prevention and risk management. Michael holds a BS in Safety Engineering from Illinois State University and an MBA from Fontbonne University. He lives in St. Louis with his wife, Evelyn, and his three daughters.</p>
+        <p>Michael has been working with The Concannon Insurance Agency for nearly a decade and brings with him 20+ years of professional loss control experience from numerous sectors, such as healthcare, manufacturing, construction and service industries. He is both a property assessment specialist and is an expert on reducing workers compensation costs in all industries.</p>
+        <p>As a leader in the risk management field, Michael is mastermind behind Zero Accident Culture® (ZAC®), a revolutionary program geared towards eliminating workplace injuries by systematically reducing hazards, modifying unsafe behaviors, and building an organization-wide commitment to health and safety. At The Concannon Insurance Agency, Michael provide clients with the Zero Accident Culture® program training and in-depth assistance on loss prevention and risk management. Michael holds a BS in Safety Engineering from Illinois State University and an MBA from Fontbonne University. He lives in St. Louis with his wife, Evelyn, and his three daughters.</p>
       </div>
     </div>
   </div>
@@ -103,7 +110,7 @@
     <div class="panel-heading" role="tab" id="headingSix">
       <h4 class="panel-title text-center">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-          <%= image_tag("/images/laura-brown.png", class: "headshot") %>
+          <%= image_tag("/images/headshot-laura-brown.jpg", class: "headshot") %>
           <p>Laura Brown, CIC</p>
           <p class="teal">Account Manager</p>
           <p><span class="yellow">+</span><span class="underline white">READ MORE</span></p>
@@ -112,7 +119,9 @@
     </div>
     <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
       <div class="panel-body">
-        <p>Laura is an insurance industry veteran with nearly 30 years of experience. She began her career at boutique agency in Kirkwood, Missouri before moving onto Transamerica Insurance where she held a variety of specialist roles and build a well-rounded industry knowledge. In 1996, Laura moved back to the agency side and served as the Life, Health &amp; Securities Manager for an agency in Pacific, MO. After 10 years of managing benefits, she moved to the Commercial Lines department where she continues today with Concannon Insurance Agency and has been an team member for over five years. Laura earned her CIC (Certified Insurance Counselor) designation in 2013. She is married with two children and enjoys camping, boating and traveling with her family.</p>
+        <p>Laura is an insurance industry veteran with nearly 30 years of experience. She began her career at boutique agency in Kirkwood, Missouri before moving onto Transamerica Insurance where she held a variety of specialist roles and build a well-rounded industry knowledge. In 1996, Laura moved back to the agency side and served as the Life, Health &amp; Securities Manager for an agency in Pacific, MO.</p>
+        <p>After 10 years of managing benefits, she moved to the Commercial Lines department where she continues today with Concannon Insurance Agency and has been an team member for over five years. Laura earned her CIC (Certified Insurance Counselor) designation in 2013. She is married with two children and enjoys camping, boating and traveling with her family.</p>
+        <p><a href="mailto:laura@concannonagency.com">laura@concannonagency.com</a></p>
       </div>
     </div>
   </div>
@@ -133,6 +142,27 @@
     <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
       <div class="panel-body">
       <p>Terry comes to The Concannon Insurance Agency as an 18 year veteran of the insurance industry. Between 1996 to 2005, she worked as an account manager and specialist for Ohio Casualty Group. Since 2005, Terry has been working on the agency side where she has focused on business insurance an account manager. In her spare time, Terry and her husband enjoy movies, music and traveling.</p>
+      <p><a href="mailto:terry@concannonagency.com">terry@concannonagency.com</a></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-6 panel panel-default">
+    <div class="panel-heading" role="tab" id="headingSeven">
+      <h4 class="panel-title text-center">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          <span class="glyphicon glyphicon-user"></span>
+          <p>Joe Berchelmann</p>
+          <p class="teal">Title</p>
+          <p><span class="yellow">+</span><span class="underline white">READ MORE</span></p>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+      <div class="panel-body">
+      <p>Desc</p>
+      <p><a href="mailto:joe@concannonagency.com">joe@concannonagency.com</a></p>
       </div>
     </div>
   </div>
