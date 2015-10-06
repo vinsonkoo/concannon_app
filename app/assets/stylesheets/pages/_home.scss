@@ -76,6 +76,11 @@ h3.desc {
 
 .home-risk-management, .bi-coverage, .pi-coverage {
 	margin: 40px 0;
+
+	p {
+		margin-bottom: 0;
+		padding-bottom: 15px;
+	}
 }
 
 @media screen and (min-width: 992px) {
@@ -85,16 +90,27 @@ h3.desc {
 		border-bottom: 20px solid #fff;
 		margin: 25px 0;
 	}
+	/* .bi-coverage {
+		-webkit-box-shadow:inset -2px 0px 0px 0px #000;
+	  -moz-box-shadow:inset -2px 0px 0px 0px #000;
+	  box-shadow:inset -2px 0px 0px 0px #000;
+	}
 	.home-risk-management {
-		-webkit-box-shadow:inset 3px 0px 0px 0px #000;
-	  -moz-box-shadow:inset 3px 0px 0px 0px #000;
-	  box-shadow:inset 3px 0px 0px 0px #000;
+		-webkit-box-shadow:inset 2px 0px 0px 0px #000;
+	  -moz-box-shadow:inset 2px 0px 0px 0px #000;
+	  box-shadow:inset 2px 0px 0px 0px #000;
+	} */
+	.line1 {
+		-webkit-box-shadow:inset -2px 0px 0px 0px #000;
+	  -moz-box-shadow:inset -2px 0px 0px 0px #000;
+	  box-shadow:inset -2px 0px 0px 0px #000;
 	}
-	.bi-coverage {
-		-webkit-box-shadow:inset -3px 0px 0px 0px #000;
-	  -moz-box-shadow:inset -3px 0px 0px 0px #000;
-	  box-shadow:inset -3px 0px 0px 0px #000;
+	.line2 {
+		-webkit-box-shadow:inset 2px 0px 0px 0px #000;
+	  -moz-box-shadow:inset 2px 0px 0px 0px #000;
+	  box-shadow:inset 2px 0px 0px 0px #000;
 	}
+	
 }
 
 @media screen and (max-width: 767px) {
