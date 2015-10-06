@@ -87,6 +87,15 @@ $cl-light-blue: #43befa;
 
 	a.btn {
 		font-size: 16px;
+		transition: color .5s ease-in-out !important;
+	  -moz-transition: color .5s ease-in-out !important;
+	  -webkit-transition: color .5s ease-in-out !important;
+	}
+	a.btn:hover {
+	  color: $cl-teal !important;
+	  transition: color .5s ease-in-out !important;
+	  -moz-transition: color .5s ease-in-out !important;
+	  -webkit-transition: color .5s ease-in-out !important;
 	}
 }
 
