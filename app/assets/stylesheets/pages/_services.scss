@@ -5,12 +5,11 @@ $cl-yellow: #ffea00;
 $cl-light-blue: #43befa;
 
 
-.services h1 {
-	margin-bottom: 20px;
-}
-
 .services {
 
+	h1 {
+		margin-bottom: 20px;
+	}
 	.navy-bg {
 		padding: 50px 0;
 
@@ -159,73 +158,80 @@ $cl-light-blue: #43befa;
 
 
 @media screen and (min-width: 768px) {
-	.service-bg-image {
 
-		> h3 {
-			margin-bottom: 70px;
-		}
-	}
+	.services {
 
-	.navy-border {
-		margin: 30px 15px !important;
-	}
-	.services-cta {
+		.service-bg-image {
 
-		span.navy {
-			margin-right: 20px;
+			> h3 {
+				margin-bottom: 70px;
+			}
 		}
 
-		.span.white {
-			margin-left: 20px;
+		.navy-border {
+			margin: 30px 15px !important;
 		}
-		h3 {
-			margin-top: 40px;
-		}
-		a.btn {
-			font-size: 36px;
-			line-height: 56px;
+		.services-cta {
+
+			span.navy {
+				margin-right: 20px;
+			}
+
+			.span.white {
+				margin-left: 20px;
+			}
+			h3 {
+				margin-top: 40px;
+			}
+			a.btn {
+				font-size: 36px;
+				line-height: 56px;
+			}
 		}
 	}
 }
 
 @media screen and (max-width: 767px) {
-	.service-bg-image {
-		background-position: -450px 105px !important;
+
+	.services {
+		.service-bg-image {
+			background-position: -450px 105px !important;
 
 
-		a.btn {
-  		width: 70%;
-  		font-size: 14px;
-  		padding: 10px 5px;
+			a.btn {
+	  		width: 70%;
+	  		font-size: 14px;
+	  		padding: 10px 5px;
+			}
+
+			> h3 {
+				height: inherit;
+				margin-bottom: 40px;
+				
+				span {
+					display: block;
+				}
+
+				span.navy, span.gray {
+					margin: 0;
+				}
+			}
 		}
 
-		> h3 {
-			height: inherit;
-			margin-bottom: 40px;
-			
-			span {
+		.myrow {
+	  	padding-bottom: 30px !important;
+	  }
+
+		.navy-border {
+	    padding: 0 !important;
+	    margin: 50px 0 0 0!important;
+	  }
+
+		.services-cta {
+			span.navy, span.white {
+				margin: 0;
 				display: block;
 			}
-
-			span.navy, span.gray {
-				margin: 0;
-			}
-		}
-	}
-
-	.myrow {
-  	padding-bottom: 30px !important;
-  }
-
-	.navy-border {
-    padding: 0 !important;
-    margin: 50px 0 0 0!important;
-  }
-
-	.services-cta {
-		span.navy, span.white {
-			margin: 0;
-			display: block;
 		}
 	}
 }

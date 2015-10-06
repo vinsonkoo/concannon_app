@@ -105,14 +105,18 @@ h3.desc {
 }
 
 @media screen and (max-width: 767px) {
-  .teal-border {
+  .navy-border {
     padding: 0 !important;
-    margin: 50px 0 !important;
+    margin: 40px 0 0 0!important;
   }
+
   .home-bg-1 {
   	h1 {
   		font-size: 30px;
   	}
+  }
+  .content-a {
+  	margin-top: 50px;
   }
 }
 @media screen and (min-width: 768px) {
