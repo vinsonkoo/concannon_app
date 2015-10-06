@@ -47,9 +47,7 @@ $cl-light-blue: #43befa;
 		}
 	}
 
-	.teal-border {
-		padding: 0 50px;
-	}
+	
 }
 
 .team-members {
@@ -108,5 +106,31 @@ $cl-light-blue: #43befa;
 		bottom: -10px;
 		width: 20%;
 		left: 40%;
+	}
+}
+
+@media (max-width: 768px) {
+	.team {
+		
+		.teal-border {
+			margin: 0 15px;
+		}
+		.navy-bg {
+			h1 {
+				text-align: left;
+			}
+			.teal-hr {
+				margin-left: 5%
+			}
+		}
+	}
+}
+
+@media (min-width: 769px) {
+	.team {
+		
+		.teal-border {
+			padding: 0px;
+		}
 	}
 }
