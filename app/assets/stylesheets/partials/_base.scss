@@ -72,12 +72,12 @@ a {
   -webkit-transition: opacity .5s ease-in-out;
 }
 a:hover {
-  // text-decoration: none !important;
-  // color: $cl-teal !important;
-  // // opacity: 0.6;
-  // transition: color .5s, opacity .5s ease-in-out !important;
-  // -moz-transition: color .5s, opacity .5s ease-in-out !important;
-  // -webkit-transition: color .5s, opacity .5s ease-in-out !important;
+  /* text-decoration: none !important;
+  color: $cl-teal !important;
+  opacity: 0.6;
+  transition: color .5s, opacity .5s ease-in-out !important;
+  -moz-transition: color .5s, opacity .5s ease-in-out !important;
+  -webkit-transition: color .5s, opacity .5s ease-in-out !important; */
 }
 a.btn {
   font-family: "montserrat-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -105,6 +105,25 @@ a.teal-btn, button.teal-btn, input.teal-btn {
 }
 a.teal-btn:hover, button.teal-btn:hover, input.teal-btn:hover {
   color: $cl-navy !important;
+  transition: color .5s, opacity .5s ease-in-out !important;
+  -moz-transition: color .5s, opacity .5s ease-in-out !important;
+  -webkit-transition: color .5s, opacity .5s ease-in-out !important;
+  opacity: 0.9;
+}
+a.navy-btn, button.navy-btn, input.navy-btn {
+  font-family: "montserrat-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  background: $cl-navy !important;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px 20px;
+  transition: color .5s, opacity .5s ease-in-out !important;
+  -moz-transition: color .5s, opacity .5s ease-in-out !important;
+  -webkit-transition: color .5s, opacity .5s ease-in-out !important;
+}
+a.navy-btn:hover, button.navy-btn:hover, input.navy-btn:hover {
+  text-decoration: none;
+  color: $cl-teal !important;
   transition: color .5s, opacity .5s ease-in-out !important;
   -moz-transition: color .5s, opacity .5s ease-in-out !important;
   -webkit-transition: color .5s, opacity .5s ease-in-out !important;

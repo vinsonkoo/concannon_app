@@ -26,7 +26,7 @@ $cl-light-blue: #43befa;
 		margin-top: 30px;
 	}
 
-	.teal-border {
+	.navy-border {
 
 		ul.col-md-8, ul.col-md-6 {
 			padding: 15px;
@@ -37,11 +37,16 @@ $cl-light-blue: #43befa;
 			font-size: 18px;
 		}
 
-		ul li:before {
-			// content: "- ";
-		}
 		a {
 			text-decoration: underline;
+		  color: $cl-teal;
+		}
+		a:hover {
+		  text-decoration: underline;
+		  color: $cl-navy;
+		  transition: color .5s ease-in-out !important;
+		  -moz-transition: color .5s ease-in-out !important;
+		  -webkit-transition: color .5s ease-in-out !important;
 		}
 	}
 	hr.risk-teal-hr {
@@ -70,6 +75,13 @@ $cl-light-blue: #43befa;
 			hr.risk-teal-hr {
 				margin-left: 40%
 			}
+		}
+
+		.carousel-indicators li {
+			display: none;
+		}
+		.testimonial-cta {
+			display: block !important;
 		}
 	}
 }
