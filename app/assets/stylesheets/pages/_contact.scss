@@ -19,8 +19,9 @@ $cl-light-blue: #43befa;
 
 
 		.contact-bg-image {
-			background-image:url('../../images/concannon-insurance-contact.jpg') !important;
+			background-image:url('../../images/concannon-insurance-contact-us.jpg') !important;
 			background-repeat: no-repeat;
+			background-size: cover;
 			box-shadow: inset 0px 0px 0px 30px #fff;
 			padding: 30px 0;
 		}
@@ -89,16 +90,12 @@ $cl-light-blue: #43befa;
 
 @media (max-width: 768px) {
 	.contact-bg-image {
-		background-position: -250px 30px !important;
 		height: 400px;
-		background-size: 762px 400px !important;
 	}
 }
 
 @media (min-width: 769px) {
 	.contact-bg-image {
-		background-size: cover !important;
-		background-position: 0 30px !important;
 		height: 700px;
 	}
 }

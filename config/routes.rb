@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get '/about' => 'welcome#about'
   get '/personal_insurance' => 'welcome#personal_insurance'
   get '/business_insurance' => 'welcome#business_insurance'
-  get '/risk_management' => 'welcome#risk_management'
+  get '/risk_management_consulting' => 'welcome#risk_management_consulting'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
