@@ -12,6 +12,7 @@ $cl-light-blue: #43befa;
 
 .team {
 
+
 	.navy-bg {
 		padding: 50px 0;
 	}
@@ -73,11 +74,31 @@ $cl-light-blue: #43befa;
 }
 
 .team-cta {
-	background-image:url('../../images/new-york-dark.jpg');
-	border: 1px solid #fff;
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding: 200px 0;
+
+	background-image: url("../../images/st-louis-dark.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+	
+	.home-bg-2 {
+
+		h2 {
+			color: $cl-teal;
+			margin-top: 90px;
+		}
+
+		.carousel-indicators {
+			bottom: -45px;
+		}
+
+		.carousel-indicators .active {
+			background: #fff;
+		}
+
+	}
+
+	.testimonial-cta {
+		margin-top: 30px;
+	}
 
 	p {
 		padding: 30px 0;

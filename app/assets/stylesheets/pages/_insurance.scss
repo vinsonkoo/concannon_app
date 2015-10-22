@@ -11,9 +11,20 @@ $cl-light-blue: #43befa;
 
 	.navy-bg {
 		padding: 50px 0;
+
+		p {
+			margin-top: 30px;
+			font-size: 20px;
+		}
+	}
+	
+	.bi-cta {
+		background-image: url("../../images/new-york-dark.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 	}
 
-	.bi-cta, .pi-cta, .risk-cta {
+	.pi-cta, .risk-cta {
 		background-image: url("../../images/st-louis-dark.jpg");
     background-size: cover;
     background-repeat: no-repeat;

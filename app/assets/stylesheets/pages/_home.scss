@@ -75,7 +75,7 @@ h3.desc {
 }
 
 .home-risk-management, .bi-coverage, .pi-coverage {
-	margin: 40px 0;
+	
 
 	p {
 		margin-bottom: 0;
@@ -84,22 +84,12 @@ h3.desc {
 }
 
 @media screen and (min-width: 992px) {
-	.home-risk-management, .pi-coverage {
-		// padding: 0px !important;
-		border-top: 20px solid #fff;
-		border-bottom: 20px solid #fff;
+	.home-risk-management, .pi-coverage, .bi-coverage {
+		/* border-top: 20px solid #fff;
+		border-bottom: 20px solid #fff; */
 		margin: 25px 0;
+		padding: 0 !important;
 	}
-	/* .bi-coverage {
-		-webkit-box-shadow:inset -2px 0px 0px 0px #000;
-	  -moz-box-shadow:inset -2px 0px 0px 0px #000;
-	  box-shadow:inset -2px 0px 0px 0px #000;
-	}
-	.home-risk-management {
-		-webkit-box-shadow:inset 2px 0px 0px 0px #000;
-	  -moz-box-shadow:inset 2px 0px 0px 0px #000;
-	  box-shadow:inset 2px 0px 0px 0px #000;
-	} */
 	.line1 {
 		-webkit-box-shadow:inset -2px 0px 0px 0px #000;
 	  -moz-box-shadow:inset -2px 0px 0px 0px #000;
