@@ -23,6 +23,10 @@ $cl-light-blue: #43befa;
 		background-image: url("../../images/st-louis-dark.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+
+    .content-a, .content-b {
+    	display: block;
+    }
 	}
 
 

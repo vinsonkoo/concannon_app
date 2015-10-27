@@ -1,8 +1,7 @@
 class Contact < MailForm::Base
-  attribute :name,      :validate => true
+  attribute :name_company,      :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :phone_number
-  attribute :company_name
   attribute :message
   attribute :nickname,  :captcha  => true
 
@@ -12,7 +11,7 @@ class Contact < MailForm::Base
     {
       :subject => "Concannon Contact Form",
       :to => "vinson@hindsitemetrics.com",
-      :from => %("#{name}" <#{email}>)
+      :from => %("#{name_company}" <#{email}>)
     }
   end
 end

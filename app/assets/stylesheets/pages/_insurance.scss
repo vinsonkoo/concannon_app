@@ -22,12 +22,20 @@ $cl-light-blue: #43befa;
 		background-image: url("../../images/new-york-dark.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+
+    .content-a, .content-b {
+    	display: block;
+    }
 	}
 
 	.pi-cta, .risk-cta {
 		background-image: url("../../images/st-louis-dark.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+
+    .content-a, .content-b {
+    	display: block;
+    }
 	}
 	
 	.testimonial-cta {

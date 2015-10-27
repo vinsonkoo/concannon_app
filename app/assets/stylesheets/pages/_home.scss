@@ -68,6 +68,10 @@ $cl-light-blue: #43befa;
 			color: $cl-teal !important;
 		}
 	}
+
+	.home-icon {
+		width: 100px
+	}
 }
 
 h3.desc {
@@ -85,8 +89,6 @@ h3.desc {
 
 @media screen and (min-width: 992px) {
 	.home-risk-management, .pi-coverage, .bi-coverage {
-		/* border-top: 20px solid #fff;
-		border-bottom: 20px solid #fff; */
 		margin: 25px 0;
 		padding: 0 !important;
 	}

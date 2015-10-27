@@ -1,30 +1,20 @@
 <div class="contact-form">
 	<%= simple_form_for @contact, :url => contact_url, :html => {:class => 'container form-horizontal' } do |f| %>
 		<div class="form-group">
-			<%= label_tag 'name', 'Your Name' %>
-			<%= f.input :name, input_html: { class: 'form-control' }, :required => true %>
-		</div>
-		<div class="form-group">
+			<%= label_tag 'name_company', 'Name And Company (If Applicable)' %>
+			<%= f.input :name_company, input_html: { class: 'form-control' }, :required => true %>
 			<%= label_tag 'email', 'Email' %>
 			<%= f.input :email, input_html: { class: 'form-control' },:required => true %>
-		</div>
-		<div class="form-group">
-			<%= label_tag 'company_name', 'Company Name' %>
-			<%= f.input :company_name, input_html: { class: 'form-control' }, :required => true %>
-		</div>
-		<div class="form-group">
 			<%= label_tag 'phone', 'Phone Number' %>
 			<%= f.input :phone_number, input_html: { class: 'form-control' }, :required => true %>
-		</div>
-		<div class="form-group">
 			<%= label_tag 'message', 'Message' %>
 			<%= f.input :message, input_html: { class: 'form-control' },:as => :text, :required => true %>
-		</div>
-		<div class= "hidden">
-      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
-    </div>
-    <div class="text-center">
-			<%= submit_tag nil, class: 'teal-btn btn-default btn-about', value: "Send" %>
+			<div class= "hidden">
+	      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+	    </div>
+	    <div class="text-center">
+				<%= submit_tag nil, class: 'teal-btn btn-default btn-about', value: "Send" %>
+			</div>
 		</div>
 	<% end %>
 </div>
