@@ -26,6 +26,10 @@ $cl-light-blue: #43befa;
     .content-a, .content-b {
     	display: block;
     }
+
+  	h2 {
+  		margin-top: 90px;
+  	}
 	}
 
 	.pi-cta, .risk-cta {
@@ -35,7 +39,11 @@ $cl-light-blue: #43befa;
 
     .content-a, .content-b {
     	display: block;
-    }
+		}
+
+    h2 {
+  		margin-top: 90px;
+  	}
 	}
 	
 	.testimonial-cta {
@@ -99,13 +107,10 @@ $cl-light-blue: #43befa;
 				margin-left: 15%
 			}
 			hr.risk-teal-hr {
-				margin-left: 40%
+				margin-left: 20%
 			}
 		}
 
-		.carousel-indicators li {
-			display: none;
-		}
 		.testimonial-cta {
 			display: block !important;
 		}

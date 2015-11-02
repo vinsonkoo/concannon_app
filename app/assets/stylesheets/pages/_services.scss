@@ -134,12 +134,6 @@ $cl-light-blue: #43befa;
 }
 
 .services-cta {
-	// background-image:url('../../images/chicago-skyline-concannon-insurance.jpg');
-	/*border: 1px solid #fff;*/
-	// background-size: cover;
-	// background-repeat: no-repeat;
-	// padding: 150px 0;
-
 	h1 {
 		margin-bottom: 100px;
 	}
@@ -155,10 +149,18 @@ $cl-light-blue: #43befa;
 
 @media (max-width: 992px) {
 	.service-bg-image {
-		background-position: -700px;
+		background-position: -700px !important;
 
 		> h3 span {
 			display: block;
+		}
+
+		.rwd-break {
+			display: none;
+		}
+
+		.col-md-4 {
+			margin-bottom: 60px
 		}
 	}
 }
@@ -212,8 +214,6 @@ $cl-light-blue: #43befa;
 			}
 		}
 		.service-bg-image {
-			background-position: -450px 105px !important;
-
 
 			a.btn {
 	  		width: 70%;
@@ -285,7 +285,7 @@ $cl-light-blue: #43befa;
 	.service-bg-image {
 
 		a.btn {
-			width: 40%;
+			width: 70%;
 		}
 
 		.blue-hr {

@@ -33,18 +33,13 @@ $cl-light-blue: #43befa;
 	}
 
 	.home-bg-2 {
-		background-image: none;
 
 		h2 {
 			color: $cl-navy;
 		}
 
-		.carousel-indicators li {
-			background: $cl-teal;
-		}
-
-		.carousel-indicators .active {
-			background: #fff;
+		.content-a {
+			display: block;
 		}
 	}
 
@@ -101,7 +96,7 @@ $cl-light-blue: #43befa;
 	}
 
 	p {
-		padding: 30px 0;
+		// padding: 30px 0;
 	}
 
 	a.btn {
@@ -116,13 +111,17 @@ $cl-light-blue: #43befa;
 	  -moz-transition: color .5s ease-in-out !important;
 	  -webkit-transition: color .5s ease-in-out !important;
 	}
+
+	.content-b {
+		display: block;
+	}
 }
 
 .client-list {
 	background: #e0e0e0;
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
 	.team .navy-bg h2:before {
 		bottom: -10px;
 		width: 20%;
@@ -130,7 +129,7 @@ $cl-light-blue: #43befa;
 	}
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.team {
 		
 		.teal-border {
@@ -147,7 +146,7 @@ $cl-light-blue: #43befa;
 	}
 }
 
-@media (min-width: 769px) {
+@media screen and (min-width: 769px) {
 	.team {
 		
 		.teal-border {

@@ -6,11 +6,9 @@ $cl-light-blue: #43befa;
 
 
 footer {
-	background: #051f43;
-	padding: 15px 0;
-}
+  background: #051f43;
+  padding: 15px 0;
 
-footer {
   p {
 	 color: #ffffff;
 
@@ -44,18 +42,35 @@ footer {
 
 @media screen and (max-width: 767px) {
   footer {
-    > .container > .col-sm-4 p{
-      text-align: center;
-    }
-
+    
     span.white {
       text-align: left;
       display: block;
       margin-bottom: 10px;
     }
     
-    .logo {
+  }
+}
 
+@media screen and (max-width: 991px) {
+
+  footer {
+    > .container .col-md-3:first-child p {
+      text-align: center;
+    }
+
+    .col-md-3 {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer {
+
+    .col-md-3:nth-child(2), .col-md-3:nth-child(3), .col-md-3:nth-child(4), {
+      width: 33.33333333%;
+      float: left;
     }
   }
 }
