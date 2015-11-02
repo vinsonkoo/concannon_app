@@ -285,6 +285,17 @@ hr.blue-hr {
   margin: 50px 15px;
 }
 
+.navy-border {
+    border: 10px solid $cl-navy;
+    background: #fff;
+    padding-bottom: 50px;
+    margin: 50px 15px !important;
+}
+
+.services, .insurance, .team {
+  overflow-x: hidden;
+}
+
 @media screen and (min-width: 768px) {
   .teal-border {
     margin: 50px 15px !important;
@@ -292,13 +303,6 @@ hr.blue-hr {
   br.rwd-break {
     display: block;
   }
-}
-
-.navy-border {
-    border: 10px solid $cl-navy;
-    background: #fff;
-    padding-bottom: 50px;
-    margin: 50px 15px !important;
 }
 
 @media screen and (min-width: 1500px) {
