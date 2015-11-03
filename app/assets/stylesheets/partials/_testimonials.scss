@@ -16,7 +16,7 @@ $cl-light-blue: #43befa;
 /*testimonials too long on smaller device widths. set bigger height*/
 @media screen and (max-width: 767px) {
   .carousel-inner {
-    min-height: 350px;
+    min-height: 400px;
   }
 }
 
@@ -116,6 +116,6 @@ $cl-light-blue: #43befa;
   }
   .carousel-caption p.testimonial-author {
     line-height: 1.4em;
-    font-size: 16px;
+    font-size: 13px;
   }
 }
