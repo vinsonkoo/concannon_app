@@ -92,12 +92,16 @@ $cl-light-blue: #43befa;
 }
 
 @media screen and (max-width: 767px) {
-  .carousel-caption p {
+  .carousel-caption p.testimonial-desc {
     line-height: 1.4em;
-    font-size: 16px;
+    font-size: 14px;
   }
   .testimonial-cta {
     // display: none !important;
+  }
+  .carousel-caption p.testimonial-author {
+    line-height: 1.4em;
+    font-size: 16px;
   }
 }
 

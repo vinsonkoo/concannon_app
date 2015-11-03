@@ -43,7 +43,9 @@ $cl-light-blue: #43befa;
 		}
 	}
 
-	
+	.teal-border {
+		padding: 0px;
+	}
 }
 
 .team-members {
@@ -64,7 +66,7 @@ $cl-light-blue: #43befa;
 	}
 
 	.person {
-		margin-bottom: 50px;
+		margin: 0 30px 50px 15px;
 	}
 }
 
@@ -132,9 +134,6 @@ $cl-light-blue: #43befa;
 @media screen and (max-width: 768px) {
 	.team {
 		
-		.teal-border {
-			margin: 50px 15px;
-		}
 		.navy-bg {
 			h1 {
 				text-align: left;
@@ -149,8 +148,6 @@ $cl-light-blue: #43befa;
 @media screen and (min-width: 769px) {
 	.team {
 		
-		.teal-border {
-			padding: 0px;
-		}
+		
 	}
 }
