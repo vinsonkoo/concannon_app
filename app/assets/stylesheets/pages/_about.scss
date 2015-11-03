@@ -34,13 +34,7 @@ $cl-light-blue: #43befa;
 		a {
 			text-decoration: underline;
 		}
-		a:hover {
-			text-decoration: underline;
-			color: $cl-navy !important;
-			transition: color .5s ease-in-out !important;
-		  -moz-transition: color .5s ease-in-out !important;
-		  -webkit-transition: color .5s ease-in-out !important;
-		}
+
 	}
 	.home-bg-2 {
 		background-image: url('../../images/st-louis-dark.jpg');
@@ -77,12 +71,7 @@ $cl-light-blue: #43befa;
 	  -moz-transition: opacity .5s ease-in-out !important;
 	  -webkit-transition: opacity .5s ease-in-out !important;
 	}
-	a.btn:hover {
-		transition: opacity .5s ease-in-out !important;
-	  -moz-transition: opacity .5s ease-in-out !important;
-	  -webkit-transition: opacity .5s ease-in-out !important;
-	  opacity: 0.6;
-	}
+
 }
 
 .clients-trust {
@@ -94,7 +83,7 @@ $cl-light-blue: #43befa;
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 	.about {
 		.navy-bg {
 			h1 {
@@ -115,14 +104,33 @@ $cl-light-blue: #43befa;
 	}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
+	
 	.founders-image {
 		width: 70%
+	}
+	
+	.about {
+		a:hover {
+			text-decoration: underline;
+			color: $cl-navy !important;
+			transition: color .5s ease-in-out !important;
+		  -moz-transition: color .5s ease-in-out !important;
+		  -webkit-transition: color .5s ease-in-out !important;
+		}
+	}
+	.about-cta {
+		a.btn:hover {
+			transition: opacity .5s ease-in-out !important;
+		  -moz-transition: opacity .5s ease-in-out !important;
+		  -webkit-transition: opacity .5s ease-in-out !important;
+		  opacity: 0.6;
+		}
 	}
 }
 
 @media screen and (min-width: 992px){
 	.about .carousel-indicators {
-	    bottom: 0;
+    bottom: 0;
 	}
 }

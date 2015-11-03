@@ -116,12 +116,7 @@ $cl-light-blue: #43befa;
 	  -moz-transition: color .5s, border .5s ease-in-out !important;
 	  -webkit-transition: color .5s, border .5s ease-in-out !important;
 	}
-	a.btn:hover {
-	  border-color: $cl-navy;
-	  transition: color .5s, border .5s ease-in-out !important;
-	  -moz-transition: color .5s, border .5s ease-in-out !important;
-	  -webkit-transition: color .5s, border .5s ease-in-out !important;
-	}
+	
 }
 
 .services-cta {
@@ -164,6 +159,12 @@ $cl-light-blue: #43befa;
 			a.btn {
 				font-size: 36px;
 				line-height: 56px;
+			}
+			a.btn:hover {
+			  border-color: $cl-navy;
+			  transition: color .5s, border .5s ease-in-out !important;
+			  -moz-transition: color .5s, border .5s ease-in-out !important;
+			  -webkit-transition: color .5s, border .5s ease-in-out !important;
 			}
 		}
 	}

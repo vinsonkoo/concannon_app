@@ -65,13 +65,7 @@ $cl-light-blue: #43befa;
 			text-decoration: underline;
 		  color: $cl-teal;
 		}
-		a:hover {
-		  text-decoration: underline;
-		  color: $cl-navy;
-		  transition: color .5s ease-in-out !important;
-		  -moz-transition: color .5s ease-in-out !important;
-		  -webkit-transition: color .5s ease-in-out !important;
-		}
+		
 	}
 	hr.risk-teal-hr {
 	  display: block;
@@ -111,6 +105,14 @@ $cl-light-blue: #43befa;
 	}
 }
 
-@media screen and (min-width: 768px) {
-
+@media screen and (min-width: 769px) {
+	.insurance {
+		a:hover {
+		  text-decoration: underline;
+		  color: $cl-navy;
+		  transition: color .5s ease-in-out !important;
+		  -moz-transition: color .5s ease-in-out !important;
+		  -webkit-transition: color .5s ease-in-out !important;
+		}
+	}
 }
