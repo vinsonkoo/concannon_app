@@ -91,12 +91,6 @@ $cl-light-blue: #43befa;
 	  -moz-transition: color .5s ease-in-out !important;
 	  -webkit-transition: color .5s ease-in-out !important;
 	}
-	a.btn:hover {
-	  color: $cl-teal !important;
-	  transition: color .5s ease-in-out !important;
-	  -moz-transition: color .5s ease-in-out !important;
-	  -webkit-transition: color .5s ease-in-out !important;
-	}
 
 	.content-b {
 		display: block;
@@ -134,8 +128,10 @@ $cl-light-blue: #43befa;
 }
 
 @media screen and (min-width: 769px) {
-	.team {
-		
-		
+	a.btn:hover {
+	  color: $cl-teal !important;
+	  transition: color .5s ease-in-out !important;
+	  -moz-transition: color .5s ease-in-out !important;
+	  -webkit-transition: color .5s ease-in-out !important;
 	}
 }
