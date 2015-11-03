@@ -119,3 +119,9 @@ $cl-light-blue: #43befa;
     font-size: 13px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .carousel-indicators {
+    bottom: -30px;
+  }
+}
