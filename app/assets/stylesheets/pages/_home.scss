@@ -18,16 +18,23 @@ $cl-light-blue: #43befa;
 			margin-left: 15px;
 			/* color: $cl-yellow !important; */
 		}
-		h1, h2 {
+		h1 {
 			background: #fff;
 			opacity: 0.6;
 			line-height: 1.5em;
 			padding: 0 15px;
+			display: inline-block
 		}
 
 	}
 	.home-bg-2 {
 		background-image:url('../../images/business-meeting.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		.testimonial-cta {
+			margin-top: 30px;
+		}
 	}
 
 	.desc {
@@ -54,8 +61,11 @@ $cl-light-blue: #43befa;
 		}
 	}
 
+	.carousel-indicators {
+		bottom: -45px;
+	}
 	.carousel-indicators li {
-	  display: none;
+	  // display: none;
 	}
 
 	.testimonial-cta {
@@ -103,8 +113,17 @@ h3.desc {
 	  box-shadow:inset 2px 0px 0px 0px #000;
 	}
 	
+	.home {
+		.carousel-indicators {
+			bottom: 0;
+		}
+	}
 }
-
+@media screen and (max-width: 991px) {
+	.col-md-4 {
+  	margin-bottom: 60px;
+  }
+}
 @media screen and (max-width: 767px) {
   .navy-border {
     padding: 0 !important;
@@ -144,3 +163,4 @@ h3.desc {
 		}
 	}
 }
+

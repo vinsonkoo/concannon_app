@@ -104,8 +104,8 @@ nav {
   font-size: 10px;
   padding: 15px 0;
 }
-.navbar-default .navbar-brand:hover {
-	opacity: 0.7;
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background: transparent !important;
   transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
   -webkit-transition: opacity .5s ease-in-out;
@@ -119,12 +119,6 @@ nav {
   -webkit-transition: color .5s ease-in-out;
   line-height: 30px;
 }
-.navbar .navbar-collapse ul.nav li a:hover {
-	color: #fff;
-	transition: color .5s ease-in-out;
-  -moz-transition: color .5s ease-in-out;
-  -webkit-transition: color .5s ease-in-out;
-}
 
 .navbar-toggle {
 	border-color: transparent !important;
@@ -132,13 +126,6 @@ nav {
 	.icon-bar {
 		background: #33c9c9 !important;
 	}
-}
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background: transparent !important;
-	transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
 }
 
 .navbar-brand .logo {
@@ -161,11 +148,31 @@ nav {
 
 
 .navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   background: transparent !important;
 }
 
 .dropdown-menu {
   background: transparent !important;
+}
+
+@media screen and (min-width: 992px) {
+  
+ .navbar-default .navbar-brand:hover {
+    opacity: 0.7;
+    transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+  }
+
+  .navbar .navbar-collapse ul.nav li a:hover {
+    color: #fff;
+    transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -webkit-transition: color .5s ease-in-out;
+  }
+
+  .navbar-default .navbar-nav > .open > a:hover {
+    background: transparent !important
+  }
 }

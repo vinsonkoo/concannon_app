@@ -202,7 +202,7 @@ COLORS
   color: $cl-yellow !important;
 }
 
-
+/********** PARALLAX **********/
 /* background setup */
 .background {
   background-repeat:no-repeat;
@@ -303,6 +303,9 @@ hr.blue-hr {
   br.rwd-break {
     display: block;
   }
+  br.rwd-break-2 {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1500px) {
@@ -322,6 +325,9 @@ hr.blue-hr {
 @media screen and (max-width: 767px) {
   br.rwd-break {
     display: none;
+  }
+  br.rwd-break-2 {
+    display: block;
   }
 }
 
