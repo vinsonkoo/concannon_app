@@ -122,6 +122,6 @@ $cl-light-blue: #43befa;
 
 @media screen and (max-width: 480px) {
   .carousel-indicators {
-    bottom: -30px;
+    bottom: -30px !important;
   }
 }
