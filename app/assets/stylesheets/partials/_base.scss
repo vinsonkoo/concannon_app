@@ -280,16 +280,10 @@ hr.blue-hr {
 
 .teal-border {
   border: 10px solid $cl-teal;
-  background: #fff;
-  padding: 50px;
-  margin: 50px 15px;
 }
 
 .navy-border {
-    border: 10px solid $cl-navy;
-    background: #fff;
-    padding-bottom: 50px;
-    margin: 50px 15px !important;
+  border: 10px solid $cl-navy;
 }
 
 .services, .insurance, .team {
@@ -298,8 +292,19 @@ hr.blue-hr {
 
 @media screen and (min-width: 768px) {
   .teal-border {
+    border: 10px solid $cl-teal;
+    background: #fff;
+    padding: 50px 0;
     margin: 50px 15px !important;
   }
+
+  .navy-border {
+    border: 10px solid $cl-navy;
+    background: #fff;
+    padding-bottom: 50px;
+    margin: 50px 15px !important;
+  }
+
   br.rwd-break {
     display: block;
   }
@@ -308,12 +313,25 @@ hr.blue-hr {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+  .teal-border {
+    margin: 50px 0 !important;
+    padding: 50px 0
+  }
+
+  .navy-border {
+    margin: 50px 0 !important;
+  }
+
   br.rwd-break {
     display: none !important;
   }
   br.rwd-break-2 {
     display: block;
+  }
+
+  .navy-border {
+    margin: 50px 0 !important;
   }
 }
 

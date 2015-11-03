@@ -46,10 +46,6 @@ $cl-light-blue: #43befa;
 			color: $cl-teal;
 		}
 
-		.carousel-indicators {
-			bottom: -45px;
-		}
-
 	}
 
 	.testimonial-cta {
@@ -142,7 +138,7 @@ $cl-light-blue: #43befa;
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 
 	.services {
 
@@ -153,9 +149,6 @@ $cl-light-blue: #43befa;
 			}
 		}
 
-		.navy-border {
-			margin: 30px 15px !important;
-		}
 		.services-cta {
 
 			span.navy {
@@ -176,7 +169,7 @@ $cl-light-blue: #43befa;
 	}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
 	.services {
 
@@ -216,7 +209,7 @@ $cl-light-blue: #43befa;
 
 		.navy-border {
 	    padding: 0 !important;
-	    margin: 50px 15px !important;
+	    margin: 50px 15px;
 	  }
 
 		.services-cta {
@@ -257,7 +250,7 @@ $cl-light-blue: #43befa;
 	}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 	.service-bg-image {
 		background-position: -700px !important;
 

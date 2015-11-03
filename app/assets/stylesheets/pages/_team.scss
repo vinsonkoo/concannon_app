@@ -17,16 +17,6 @@ $cl-light-blue: #43befa;
 		padding: 50px 0;
 	}
 
-	.navy-border {
-
-		span.navy {
-			margin-right: 20px;
-		}
-		span.gray {
-			margin-left: 20px;
-		}
-	}
-
 	.navy-bg p {
 		margin-top: 30px;
 		font-size: 20px;
@@ -43,9 +33,6 @@ $cl-light-blue: #43befa;
 		}
 	}
 
-	.teal-border {
-		padding: 0px;
-	}
 }
 
 .team-members {
@@ -65,9 +52,6 @@ $cl-light-blue: #43befa;
 		width: 150px;
 	}
 
-	.person {
-		margin: 0 30px 50px 15px;
-	}
 }
 
 .team-cta {
@@ -128,6 +112,10 @@ $cl-light-blue: #43befa;
 		bottom: -10px;
 		width: 20%;
 		left: 40%;
+	}
+
+	.person {
+		margin: 0 30px 50px 15px;
 	}
 }
 
