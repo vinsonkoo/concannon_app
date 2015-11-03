@@ -74,6 +74,12 @@ $cl-light-blue: #43befa;
 
 .carousel-control {
   bottom: 180px !important;
+  width: 10%;
+}
+
+.carousel-caption {
+  left: 10% !important;
+  right: 10% !important;
 }
 
 /* Remove gradient from left/right arrows */
