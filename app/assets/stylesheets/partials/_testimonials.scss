@@ -66,18 +66,21 @@ $cl-light-blue: #43befa;
   background-image:url('../../images/business-meeting.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 !important;
 }
 
 .testimonial-bg-2 {
   background-image: url("../../images/st-louis-dark.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 !important;
 }
 
 .testimonial-bg-3 {
   background-image: url("../../images/new-york-dark.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 !important;
 }
 
 .testimonial-desc {
@@ -86,7 +89,7 @@ $cl-light-blue: #43befa;
 
 .testimonial-cta {
   text-align: center;
-  margin-bottom: 0
+  // margin-top: 20px;
 }
 
 
@@ -100,17 +103,6 @@ $cl-light-blue: #43befa;
 -------------------------------------------------- */
 
 
-@media screen and (max-width: 767px) {
-  .carousel-item {
-    min-height: 400px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .carousel .item {
-    min-height: 400px;
-  }
-}
 @media screen and (min-width: 992px) {
   /* Bump up size of carousel content */
   .unit p {
@@ -118,9 +110,6 @@ $cl-light-blue: #43befa;
     line-height: 1.4em;
     font-size: 20px;
     /*line-height: 2em;*/
-  }
-  .carousel .item {
-    min-height: 350px;
   }
 }
 
@@ -130,14 +119,21 @@ $cl-light-blue: #43befa;
     font-size: 18px;
   }
 }
-
+@media screen and (min-width: 768px) {
+  .carousel-indicators {
+    bottom: 0 !important;
+  }
+}
 @media screen and (max-width: 767px) {
   .unit p.testimonial-desc {
     line-height: 1.4em;
     font-size: 14px;
   }
   .testimonial-cta {
-    // display: none !important;
+    margin-top: 20px;
+  }
+  .carousel-indicators {
+    bottom: -10px !important
   }
   .unit p.testimonial-author {
     line-height: 1.4em;
