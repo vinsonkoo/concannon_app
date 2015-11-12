@@ -221,9 +221,9 @@ html, body {
 
 /* visual styles */
 body{
-  margin: 0;
+  margin: 0 auto !important;
   font-size: 28px;
-  line-height: 100px;
+  // line-height: 100px;
 }
 section {
   background: #9ed100;
@@ -241,13 +241,6 @@ hr.yellow-hr {
   margin-left: 10%;
 }
 
-hr.teal-hr {
-  display: block;
-  border: 0;
-  border-top: 5px solid $cl-teal;
-  width: 20%;
-  margin-left: 40%;
-}
 
 hr.blue-hr {
   display: block;
@@ -269,7 +262,7 @@ hr.blue-hr {
   overflow-x: hidden;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .teal-border {
     border: 10px solid $cl-teal;
     background: #fff;
