@@ -262,6 +262,7 @@ hr.blue-hr {
   overflow-x: hidden;
 }
 
+
 @media screen and (min-width: 769px) {
   .teal-border {
     border: 10px solid $cl-teal;
@@ -328,6 +329,12 @@ hr.blue-hr {
   .navy-border {
     margin: 50px 0 !important;
   }
+  .navy-bg {
+    p {
+      font-size: 16px !important;
+    }
+  }
+
 }
 
 @media screen and (min-width: 992px) {

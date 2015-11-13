@@ -79,17 +79,19 @@ $cl-light-blue: #43befa;
 	}
 
 	.home-icon {
-		width: 100px
+		width: 100px;
+		margin-left: calc(50% - 50px); // aligns image to center of container.
+		display: inline-block;
 	}
 }
 
 .home-risk-management, .bi-coverage, .pi-coverage {
 	h3 {
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin-top: 0px;
+		// margin-bottom: 20px;
 	}
 	p {
-
+		margin-bottom: 0;
 	}
 }
 
