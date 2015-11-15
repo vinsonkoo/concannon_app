@@ -1,4 +1,14 @@
-<div class="row testimonial-bg<%= '-2' if current_page?(services_path); '-2' if current_page?(personal_insurance_path); '-2' if current_page?(risk_management_consulting_path); '-3' if current_page?(business_insurance_path) %>">
+<% if current_page?(services_path) %>
+  <div class="row testimonial-bg">
+<% elsif current_page?(personal_insurance_path) %>
+  <div class="row testimonial-bg-2">
+<% elsif current_page?(business_insurance_path) %>
+  <div class="row testimonial-bg-3">
+<% elsif current_page?(risk_management_consulting_path) %>
+  <div class="row testimonial-bg-3">
+<% else %>
+  <div class="row testimonial-bg">
+<% end %>
   <!--carousel-->
   <div id="carousel-testimonial" class="carousel slide" data-ride="carousel">
     <h2 class="teal text-center">What Concannon Clients Say</h2>
