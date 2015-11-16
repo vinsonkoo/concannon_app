@@ -280,10 +280,12 @@ hr.blue-hr {
 
   br.rwd-break {
     display: block;
+    line-height: 0;
   }
 
   br.rwd-break-2 {
     display: none;
+
   }
 
   a.teal-btn:hover, button.teal-btn:hover, input.teal-btn:hover {
@@ -324,6 +326,7 @@ hr.blue-hr {
   }
   br.rwd-break-2 {
     display: block;
+    line-height: 0;
   }
 
   .navy-bg {
@@ -337,6 +340,7 @@ hr.blue-hr {
 @media screen and (min-width: 992px) {
   br.rwd-break-3 {
     display: block;
+    line-height: 0;
   } 
 }
 @media screen and (max-width: 991px) {

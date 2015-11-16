@@ -181,11 +181,12 @@ $cl-light-blue: #43befa;
 			}
 
 			> h3 {
-				height: inherit;
+				margin-top: 10px;
 				margin-bottom: 40px;
 				
 				span {
 					display: block;
+					line-height: 40px;
 				}
 
 				span.navy, span.gray {
@@ -298,11 +299,5 @@ $cl-light-blue: #43befa;
 @media screen and (min-width: 992px) and (max-width: 1201px) {
 	br.rwd-break-3 {
 		display: none !important;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.service-bg-image > h3 span {
-		line-height: 24px;
 	}
 }
