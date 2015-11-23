@@ -33,14 +33,19 @@ footer {
     -moz-transition: color .5s ease-in-out;
     -webkit-transition: color .5s ease-in-out;
   }
-  a:hover {
-    color: $cl-teal;
-    transition: color .5s ease-in-out;
-    -moz-transition: color .5s ease-in-out;
-    -webkit-transition: color .5s ease-in-out;
-  }
+
 }
 
+@media screen and (max-width: 767px) {
+  footer {
+    a:hover {
+      color: $cl-teal;
+      transition: color .5s ease-in-out;
+      -moz-transition: color .5s ease-in-out;
+      -webkit-transition: color .5s ease-in-out;
+    }
+  }
+}
 @media screen and (max-width: 767px) {
   footer {
     
