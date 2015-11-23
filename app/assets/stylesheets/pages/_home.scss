@@ -97,19 +97,13 @@ $cl-light-blue: #43befa;
 
 @media screen and (min-width: 993px) {
 	.pi-coverage {
-		-webkit-box-shadow:inset -2px 0px 0px 0px #000, -2px 0px 0px 0px #000;
-	  -moz-box-shadow:inset -2px 0px 0px 0px #000, -2px 0px 0px 0px #000;
-	  box-shadow:inset -2px 0px 0px 0px #000, -2px 0px 0px 0px #000;
+		border-left: 2px solid #000;
+		border-right: 2px solid #000;
+		padding: 0 5px;
 	}
 	.home-risk-management, .pi-coverage, .bi-coverage {
 		margin: 25px 0;
 	}
-	.line1 {
-	  p {
-	  	padding: 0 5px;
-	  }
-	}
-	
 }
 @media screen and (max-width: 992px) {
 	.home {
@@ -162,8 +156,8 @@ $cl-light-blue: #43befa;
 		}
 	}
 	.home-bg-1 {
-		height: 600px !important;
-		background-position-y: -100px !important;	
+		height: 550px !important;
+		background-position-y: -50px !important;	
 		
 		h1 {
 			margin-top: 80px;
