@@ -1,5 +1,4 @@
 class ContactMailer < ApplicationMailer
-	# default from: vinson@hindsitemetrics.com
 
 	def new
 		@contact = Contact.new
@@ -12,7 +11,7 @@ class ContactMailer < ApplicationMailer
 		@company_name = company_name
 		@message = message
 
-		mail(to: 'vinson@hindsitemetrics.com', from: email, subject: subject)
+		mail(to: 'jim@concannonagency.com.com', from: email, subject: subject)
 	end
 
 end
